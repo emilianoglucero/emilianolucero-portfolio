@@ -87,7 +87,7 @@ export default function Sketch(p5) {
       y.push(p5.sin(angle * i) * initRadius);
     }
 
-    p5.stroke(80, 252, 84);
+    p5.stroke(96, 216, 0);
     p5.strokeWeight(0.85);
     p5.background(245,245,245);
   }

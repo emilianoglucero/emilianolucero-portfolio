@@ -6,6 +6,20 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
-  plugins: ['gatsby-plugin-postcss']
+  plugins: [
+    {
+    resolve: `gatsby-plugin-postcss`,
+    options: {
+        postCssPlugins: [require("tailwindcss")],
+        },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          path: `${__dirname}/src/images/`,
+        },
+      },
+  ],
 }
