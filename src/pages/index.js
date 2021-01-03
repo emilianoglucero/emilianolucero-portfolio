@@ -47,152 +47,243 @@ export default function Home({ data }) {
       <br />
 
       <p>
-        Some personal and client projects
+      Personal experiments and some client projects
       </p>
       <br />
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center content-center">
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex-1 m-auto">
+
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Emiliano Lucero"
         />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Giphy searcher</div>
             <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            A super super super simple gif searcher powered by Giphy.
             </p>
           </div>
           <div className="px-6 py-4">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#React</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Unit Testing</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Javascript</span>
           </div>
         </div>
 
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex-1 m-auto">
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Emiliano Lucero"
         />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Twitter Bot</div>
             <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            A twitter bot made with Javascript, Node.js and Express.
             </p>
           </div>
           <div className="px-6 py-4">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Node.js</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Javascript</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Express</span>
           </div>
         </div>
 
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex-1 m-auto">
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Emiliano Lucero"
         />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Alpha Training Center Dojo</div>
             <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            Landing page made for the Alpha Training Center Dojo.
             </p>
           </div>
           <div className="px-6 py-4">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#React</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Gatsby</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Sass</span>
           </div>
         </div>
 
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex-1 m-auto">
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Emiliano Lucero"
         />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Compraventa</div>
             <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            Net Art work inspired by a telegram group made with React.
             </p>
           </div>
           <div className="px-6 py-4">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Net Art</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#React</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Javascript</span>
           </div>
         </div>
 
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex-1 m-auto">
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Emiliano Lucero"
         />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Ateitis Corp</div>
             <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            Headless CMS and Ecommerce for Ateitis Corp made with React, Gatsby and Wordpress.
             </p>
           </div>
           <div className="px-6 py-4">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#React</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#GraphQL</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Wordpress</span>
           </div>
         </div>
 
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex-1 m-auto">
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Emiliano Lucero"
         />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Me encanta todo eso</div>
             <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            Google Chrome plugin made to change the Facebook Desktop UI.
             </p>
           </div>
           <div className="px-6 py-4">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Javascript</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Chrome Plugin</span>
+            {/* <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#UI</span> */}
           </div>
         </div>
 
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex-1 m-auto">
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Emiliano Lucero"
         />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Screenshots</div>
             <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            Net Art work. Playing with p5.js and 3D.
             </p>
           </div>
           <div className="px-6 py-4">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Net Art</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#p5.js</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#3D</span>
           </div>
         </div>
 
-        <div className="max-w-sm rounded overflow-hidden shadow-lg flex-1 m-auto">
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Emiliano Lucero"
         />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Colorea un politic</div>
             <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            Net Art work to colour political persons from Argentina.
             </p>
           </div>
           <div className="px-6 py-4">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Javascript</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#p5.js</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#PHP</span>
+          </div>
+        </div>
+
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="Emiliano Lucero"
+        />
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Hola Diego Armando Maradona</div>
+            <p className="text-gray-700 text-base">
+            Net Art work. Playing with p5.js inspired by Diego Armando Maradona 💕
+            </p>
+          </div>
+          <div className="px-6 py-4">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Javascript</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#p5.js</span>
+            {/* <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span> */}
+          </div>
+        </div>
+
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="Emiliano Lucero"
+        />
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">El viaje de sarandraca</div>
+            <p className="text-gray-700 text-base">
+            Net Art and Video Game work. Playing with p5.js and inspired by Flappy Bird.
+            </p>
+          </div>
+          <div className="px-6 py-4">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Javascript</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#p5.js</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#PHP</span>
+          </div>
+        </div>
+
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="Emiliano Lucero"
+        />
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Asociación Rosarina de Tenis App</div>
+            <p className="text-gray-700 text-base">
+            Mobile Hybrid App for The Asociación Rosarina de Tenis made with Apache Cordova.
+            </p>
+          </div>
+          <div className="px-6 py-4">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Javascript</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Apache Cordova</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Framework7</span>
+          </div>
+        </div>
+
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="Emiliano Lucero"
+        />
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Bebeto Face Filter</div>
+            <p className="text-gray-700 text-base">
+            Instagram face filter made with Spark AR Studio.
+            </p>
+          </div>
+          <div className="px-6 py-4">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Spark</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Instagram</span>
+            {/* <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Framework7</span> */}
+          </div>
+        </div>
+
+        <div className="max-w-sm min-h-full rounded overflow-hidden shadow-lg flex-1 m-auto hover:shadow-md flex flex-col">
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="Emiliano Lucero"
+        />
+          <div className="px-6 py-4 flex-grow">
+            <div className="font-bold text-xl mb-2">Abrí la voki</div>
+            <p className="text-gray-700 text-base">
+            Net Art work. Playing with p5.js, access to camera device and facial recognition models.
+            </p>
+          </div>
+          <div className="px-6 py-4 flex-grow">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Net Art</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Javascript</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#p5.js</span>
           </div>
         </div>
 
