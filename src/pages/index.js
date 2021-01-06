@@ -13,10 +13,13 @@ import {
 
 import P5 from '../p5/p5';
 import Img from "gatsby-image";
+import MainAnimation from "../components/MainAnimation";
+
+
 
 
 export default function Home({ data }) {
-  console.log(data);
+  //console.log('Hi there, emilia');
   return (
     <>
 
@@ -26,11 +29,12 @@ export default function Home({ data }) {
       <p className="my-5 leading-normal">Hello, my name is <span className="font-semibold">Emiliano</span>.<br />
       I'm a Front End Developer working remotely from Ciudad de Córdoba, Argentina.</p> 
       <div className="my-11">
-        <Img
+        {/* <Img
           fluid={data.profile.childImageSharp.fluid}
           style={{height: "50%", width: "50%", margin: "auto", borderRadius:"50%"}} 
           alt="Emiliano Lucero"
-        />
+        /> */}
+        <MainAnimation style={{height: "70%", width: "70%", margin: "auto"}} />
       </div>
       <p className="my-11 leading-normal">
         I enjoy building everything from small business sites to rich interactive web apps.
@@ -320,7 +324,7 @@ export default function Home({ data }) {
       </div>
 
       <div>
-        <p className="my-20">Contact me</p>
+        <p className="my-20">Stay in touch</p>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-2 mx-1 md:mx-16 lg:mx-56">
           <a className="hover:opacity-90" href="https://www.linkedin.com/in/emilianoglucero/" rel="noreferrer" target="_blank"><FontAwesomeIcon aria-label="Linkedin" className="m-auto" icon={faLinkedinIn} size="2x" /></a>
