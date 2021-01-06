@@ -26,6 +26,7 @@
     "gatsby-plugin-analytics": "^0.2.0",
     "gatsby-plugin-google-analytics": "^2.8.0",
     "gatsby-plugin-manifest": "^2.9.1",
+    "gatsby-plugin-optimize-svgs": "^1.0.4",
     "gatsby-plugin-postcss": "^3.4.0",
     "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-source-filesystem": "^2.8.1",
