@@ -31,6 +31,7 @@
     "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-sharp": "^2.9.0",
+    "lottie-web": "^5.7.5",
     "p5": "^1.2.0",
     "postcss": "^8.2.2",
     "react": "^16.12.0",
