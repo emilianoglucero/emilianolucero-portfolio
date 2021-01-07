@@ -7,14 +7,6 @@ import animation from "../animations/circular-line.json";
 const Loading = () => {
   let animationContainer = createRef();
   
-  lottie.loadAnimation({
-    container: animationContainer.current, // current instance of our container!
-    animationData: animation, // animation file!
-    renderer: "svg",
-    loop: true,
-    autoplay: true
-  });
-
   useEffect(() => {
     const anim = lottie.loadAnimation({
       container: animationContainer.current,
