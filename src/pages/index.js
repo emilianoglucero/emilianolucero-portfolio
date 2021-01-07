@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { graphql } from "gatsby";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,13 +14,28 @@ import {
 import P5 from '../p5/p5';
 import Img from "gatsby-image";
 import MainAnimation from "../components/MainAnimation";
+import Loading from "../components/Loading";
 
 
 
 
 export default function Home({ data }) {
-  //console.log('Hi there, emilia');
-  return (
+
+  const [isLoadingDOM, setIsLoadingDOM] = useState(true);
+  
+  useEffect(() => {
+
+    setTimeout(() => {
+      //window.addEventListener('load', setIsLoading(false));
+      window.addEventListener('DOMContentLoaded', setIsLoadingDOM(false));
+    }, 2800);
+
+  }, []);
+
+
+  return isLoadingDOM ? <Loading/>
+  :
+
     <>
 
     <P5 />
@@ -337,7 +352,7 @@ export default function Home({ data }) {
 
     </>
 
-  )
+  
 }
 
 export const query = graphql`
