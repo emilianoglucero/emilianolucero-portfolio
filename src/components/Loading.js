@@ -1,5 +1,4 @@
 import React, { useEffect, createRef } from "react";
-//import "./App.css";
 
 import lottie from "lottie-web";
 import animation from "../animations/circular-line.json";

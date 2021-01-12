@@ -1,38 +1,3 @@
-// P_2_1_1_03
-//
-// Generative Gestaltung – Creative Coding im Web
-// ISBN: 978-3-87439-902-9, First Edition, Hermann Schmidt, Mainz, 2018
-// Benedikt Groß, Hartmut Bohnacker, Julia Laub, Claudius Lazzeroni
-// with contributions by Joey Lee and Niels Poldervaart
-// Copyright 2018
-//
-// http://www.generative-gestaltung.de
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-/**
- * changing number, color and strokeweight on diagonals in a grid
- *
- * MOUSE
- * position x          : diagonal strokeweight
- * position y          : number diagonals
- * left click          : new random layout
- *
- * KEYS
- * s                   : save png
- * 1                   : color left diagonal
- * 2                   : color right diagonal
- * 3                   : switch transparency left diagonal on/off
- * 4                   : switch transparency right diagonal on/off
- * 0                   : default
- */
 'use strict';
 
 var tileCount = 1;
