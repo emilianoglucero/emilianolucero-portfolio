@@ -47,7 +47,7 @@ export default function Home() {
         I enjoy building everything from small business sites to rich interactive web apps.
       </p>
       <p className="leading-normal my-16">
-      Interested in hire me or doing a project together?
+      Interested in hiring me or doing a project together?
       </p>
 
       <a href="mailto:emilianoglucero@gmail.com" 
