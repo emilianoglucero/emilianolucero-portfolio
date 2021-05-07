@@ -1,5 +1,6 @@
 import React from "react"
 import { Image } from "../components/Image"
+import SimplePlane from "./SimplePlane"
 
 export const Projects = ({ info }) => {
   return (
@@ -10,7 +11,8 @@ export const Projects = ({ info }) => {
         rel="noreferrer"
         target="_blank"
       >
-        <Image filename={info.filename} />
+        {/* <Image filename={info.filename} /> */}
+        <SimplePlane />
       </a>
       <div className="px-6 py-4 flex-grow">
         <div className="font-bold text-xl mb-2">{info.title}</div>
