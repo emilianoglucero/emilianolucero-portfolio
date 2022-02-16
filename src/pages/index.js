@@ -24,10 +24,10 @@ export default function Home() {
     <>
       <P5 />
 
-      <div className="container mx-auto my-14 px-6 md:px-12 lg:px-12 text-center text-primary text-4xl font-mono">
+      <div className="container px-6 mx-auto font-mono text-4xl text-center my-14 md:px-12 lg:px-12 text-primary">
         <Header />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center content-center">
+        <div className="grid content-center justify-center grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projectsInfo.map(info => (
             <Projects key={info.id} info={info} />
           ))}

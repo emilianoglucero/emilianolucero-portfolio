@@ -13,9 +13,9 @@ export const Footer = () => {
     <div>
       <p className="pt-24 pb-10">Stay in touch</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-2 mx-1 md:mx-16 lg:mx-56">
+      <div className="grid grid-cols-1 gap-2 mx-1 md:grid-cols-4 md:mx-16 lg:mx-56">
         <a
-          className="transform hover:rotate-3"
+          className="transition-transform transform duration-250 hover:rotate-3"
           href="https://www.linkedin.com/in/emilianoglucero/"
           rel="noreferrer"
           target="_blank"
@@ -28,7 +28,7 @@ export const Footer = () => {
           />
         </a>
         <a
-          className="transform hover:rotate-3"
+          className="transition-transform transform duration-250 hover:rotate-3"
           href="https://github.com/emilianoglucero"
           rel="noreferrer"
           target="_blank"
@@ -41,7 +41,7 @@ export const Footer = () => {
           />
         </a>
         <a
-          className="transform hover:rotate-3"
+          className="transition-transform transform duration-250 hover:rotate-3"
           href="mailto:emilianoglucero@gmail.com"
           rel="noreferrer"
           target="_blank"
@@ -54,7 +54,7 @@ export const Footer = () => {
           />
         </a>
         <a
-          className="transform hover:rotate-3"
+          className="transition-transform transform duration-250 hover:rotate-3"
           href="https://www.youtube.com/user/emilianogaston5000"
           rel="noreferrer"
           target="_blank"
