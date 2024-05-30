@@ -5,7 +5,7 @@ const projectsInfo = [
     filename: "nuncasepuedehacermasrapido.png",
     title: "Nunca se puede hacer más rápido",
     description:
-      "Playing with Three.js, GSAP animations and shaders to showcase a printed zine I released in 2018",
+      "Playing with Three.js, GSAP animations and shaders to showcase a printed zine I released in 2018.",
     tag1: "Three.js",
     tag2: "GSAP",
     tag3: "Shaders",
@@ -38,7 +38,7 @@ const projectsInfo = [
     filename: "giphy.jpg",
     title: "Giphy searcher",
     description:
-      "A super super super simple gif searcher powered by Giphy. An excuse to do some Unit Testing",
+      "A super super super simple gif searcher powered by Giphy. An excuse to do some Unit Testing.",
     tag1: "React",
     tag2: "UnitTesting",
     tag3: "Javascript",
@@ -153,7 +153,7 @@ const projectsInfo = [
     href: "https://www.instagram.com/ar/532471514229195/",
     filename: "instagram.jpg",
     title: "Bebeto Face Filter",
-    description: "Instagram face filter made with Spark AR Studio",
+    description: "Instagram face filter made with Spark AR Studio.",
     tag1: "Spark",
     tag2: "Instagram",
     tag3: "",
