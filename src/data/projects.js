@@ -3,7 +3,7 @@ const projectsInfo = [
     id: 16,
     href: "https://bebeto-pizza.vercel.app/nuncasepuedehacermasrapido.html",
     filename: "cuti.jpg",
-    title: "Cutie Romero",
+    title: "nunca se puede hacer mas rápido",
     description:
       "playing with three.js GSAP animations and shaders to showcase a printed zine I released in 2018",
     tag1: "Three.js",
