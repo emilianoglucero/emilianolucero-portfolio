@@ -1,4 +1,15 @@
 const projectsInfo = [
+   {
+    id: 16,
+    href: "https://bebeto-pizza.vercel.app/nuncasepuedehacermasrapido.html",
+    filename: "cuti.jpg",
+    title: "Cutie Romero",
+    description:
+      "playing with three.js GSAP animations and shaders to showcase a printed zine I released in 2018",
+    tag1: "Three.js",
+    tag2: "GSAP",
+    tag3: "Shaders",
+  },
   {
     id: 15,
     href: "https://cutie-romero.vercel.app",
@@ -54,7 +65,7 @@ const projectsInfo = [
   },
   {
     id: 10,
-    href: "https://bebeto.pizza/compraventa",
+    href: "https://bebeto-pizza.vercel.app/compraventa.html",
     filename: "compraventa.jpg",
     title: "Compraventa",
     description: "Net Art work inspired by a telegram group made with React.",
@@ -86,29 +97,29 @@ const projectsInfo = [
   },
   {
     id: 7,
-    href: "https://bebeto.pizza/screenshots",
+    href: "https://bebeto-pizza.vercel.app/screenshots.html",
     filename: "screenshots.jpg",
     title: "Screenshots",
-    description: "Net Art work. Playing with p5.js and 3D.",
+    description: "Net Art work. Playing with three.js",
     tag1: "NetArt",
-    tag2: "p5.js",
-    tag3: "3D",
+    tag2: "three.js",
+    tag3: "",
   },
   {
     id: 6,
-    href: "https://bebeto.pizza/dibujate-algo-lindo",
+    href: "https://bebeto-pizza.vercel.app/dibuja.html",
     filename: "color.jpg",
-    title: "Colorea un politic",
-    description: "Net Art work. Coloring political figures from Argentina.",
+    title: "colorea un empresario",
+    description: "Net Art work. Coloring businessman figures from Argentina.",
     tag1: "Javascript",
     tag2: "PHP",
     tag3: "",
   },
   {
     id: 5,
-    href: "https://bebeto.pizza/soy-una-antorcha",
+    href: "https://bebeto-pizza.vercel.app/maradona.html",
     filename: "diego.jpg",
-    title: "Hola Diego Armando Maradona",
+    title: "para el pueblo lo mejor",
     description: "Net Art work. Inspired in Diego Armando Maradona 💕",
     tag1: "NetArt",
     tag2: "Javascript",
@@ -116,7 +127,7 @@ const projectsInfo = [
   },
   {
     id: 4,
-    href: "https://bebeto.pizza/zarandraca-vs-beltran",
+    href: "https://bebeto-pizza.vercel.app/zarandraca.html",
     filename: "sarandraca.jpg",
     title: "El viaje de sarandraca",
     description:
@@ -149,7 +160,7 @@ const projectsInfo = [
   },
   {
     id: 1,
-    href: "https://bebeto.pizza/sin-goyete",
+    href: "https://bebeto-pizza.vercel.app/voca.html",
     filename: "boca.jpg",
     title: "Abrí la voki",
     description:
