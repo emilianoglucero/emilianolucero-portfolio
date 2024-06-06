@@ -24,7 +24,7 @@ const projectsInfo = [
   {
     id: 14,
     href: "https://github.com/emilianoglucero/emilianolucero-portfolio",
-    filename: "portfolio.jpg",
+    filename: "portfolio.png",
     title: "Personal Portfolio Website",
     description:
       "Landing page for my portfolio (this site). A great excuse to use TailwindCSS, React and Gatsby.",
@@ -100,7 +100,7 @@ const projectsInfo = [
     href: "https://bebeto-pizza.vercel.app/screenshots.html",
     filename: "screenshots.jpg",
     title: "Screenshots",
-    description: "Net Art work. Playing with three.js",
+    description: "Net Art work. Playing with Three.js",
     tag1: "NetArt",
     tag2: "three.js",
     tag3: "",
@@ -108,11 +108,11 @@ const projectsInfo = [
   {
     id: 6,
     href: "https://bebeto-pizza.vercel.app/dibuja.html",
-    filename: "color.jpg",
+    filename: "colorea.png",
     title: "Colorea un empresario",
     description: "Net Art work. Coloring businessman figures from Argentina.",
-    tag1: "Javascript",
-    tag2: "PHP",
+    tag1: "p5.js",
+    tag2: "Node.js",
     tag3: "",
   },
   {
@@ -121,19 +121,19 @@ const projectsInfo = [
     filename: "diego.jpg",
     title: "Para el pueblo lo mejor",
     description: "Net Art work. Inspired in Diego Armando Maradona 💕",
-    tag1: "NetArt",
-    tag2: "Javascript",
+    tag1: "Javascript",
+    tag2: "p5.js",
     tag3: "",
   },
   {
     id: 4,
     href: "https://bebeto-pizza.vercel.app/zarandraca.html",
-    filename: "sarandraca.jpg",
-    title: "El viaje de sarandraca",
+    filename: "zarandraca.png",
+    title: "El viaje de zarandraca",
     description:
-      "Net Art and Video Game work dedicated to a friend. Playing with p5.js and inspired by Flappy Bird.",
+      "Net Art and Video Game work dedicated to a friend. Playing with p5.js and phaser.io and inspired by Flappy Bird.",
     tag1: "Javascript",
-    tag2: "PHP",
+    tag2: "Node.js",
     tag3: "p5.js",
   },
   {
