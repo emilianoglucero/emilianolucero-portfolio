@@ -5,8 +5,8 @@ const projectsInfo = [
     filename: "nuncasepuedehacermasrapido.png",
     title: "Nunca se puede hacer más rápido",
     description:
-      "Playing with Three.js, GSAP animations and shaders to showcase a printed zine I released in 2018.",
-    tag1: "Three.js",
+      "Playing with React Three Fiber, GSAP animations and shaders to showcase a printed zine I released in 2018.",
+    tag1: "React Three Fiber",
     tag2: "GSAP",
     tag3: "Shaders",
   },
@@ -16,7 +16,7 @@ const projectsInfo = [
     filename: "cuti.jpg",
     title: "Cutie Romero",
     description:
-      "A three.js experience that explores the interaction between Twitter fandom and professional football players featuring interactive elements, animations, physics and shaders.",
+      "A Three.js experience that explores the interaction between Twitter fandom and professional football players featuring interactive elements, animations, physics and shaders.",
     tag1: "Three.js",
     tag2: "Javascript",
     tag3: "GSAP",
@@ -71,7 +71,7 @@ const projectsInfo = [
     description: "Net Art work inspired by a telegram group made with React.",
     tag1: "NetArt",
     tag2: "React",
-    tag3: "Javascript",
+    tag3: "",
   },
   {
     id: 9,
@@ -98,12 +98,12 @@ const projectsInfo = [
   {
     id: 7,
     href: "https://bebeto-pizza.vercel.app/screenshots.html",
-    filename: "screenshots.jpg",
+    filename: "screenshots.png",
     title: "Screenshots",
-    description: "Net Art work. Playing with Three.js",
+    description: "Net Art work. Playing with React Three Fiber",
     tag1: "NetArt",
-    tag2: "three.js",
-    tag3: "",
+    tag2: "React Three Fiber",
+    tag3: "Drei",
   },
   {
     id: 6,
@@ -113,7 +113,7 @@ const projectsInfo = [
     description: "Net Art work. Coloring businessman figures from Argentina.",
     tag1: "p5.js",
     tag2: "Node.js",
-    tag3: "",
+    tag3: "Google Cloud Storage",
   },
   {
     id: 5,
