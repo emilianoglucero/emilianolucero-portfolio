@@ -16,7 +16,7 @@ const projectsInfo = [
     filename: "cuti.jpg",
     title: "Cutie Romero",
     description:
-      "A three.js experience. Dedicated to Cristian 'Cutie' Romero and their South Korean fandom.",
+      "A three.js experience that explores the interaction between Twitter fandom and professional football players featuring interactive elements, animations, physics and shaders.",
     tag1: "Three.js",
     tag2: "Javascript",
     tag3: "GSAP",
