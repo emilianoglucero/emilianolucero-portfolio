@@ -1,5 +1,16 @@
 const projectsInfo = [
    {
+   id: 17,
+    href: "https://blog-tech-two-khaki.vercel.app/",
+    filename: "blog-tech.png",
+    title: "I 🩶 my computer job",
+    description:
+      "Writings, explorations and stuff. A blog built with Next.js and Typescript. GSAP for animations and Payload as CMS. ",
+    tag1: "Next.js",
+    tag2: "GSAP",
+    tag3: "Typescript",
+   },
+   {
     id: 16,
     href: "https://bebeto-pizza.vercel.app/nuncasepuedehacermasrapido.html",
     filename: "nuncasepuedehacermasrapido.png",
