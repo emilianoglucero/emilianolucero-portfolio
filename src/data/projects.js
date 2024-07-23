@@ -1,6 +1,6 @@
 const projectsInfo = [
    {
-   id: 17,
+   id: 18,
     href: "https://blog-tech-two-khaki.vercel.app/",
     filename: "blog-tech.png",
     title: "I 🩶 my computer job",
@@ -11,7 +11,7 @@ const projectsInfo = [
     tag3: "Typescript",
    },
    {
-    id: 16,
+    id: 17,
     href: "https://bebeto-pizza.vercel.app/nuncasepuedehacermasrapido.html",
     filename: "nuncasepuedehacermasrapido.png",
     title: "Nunca se puede hacer más rápido",
@@ -22,7 +22,7 @@ const projectsInfo = [
     tag3: "Shaders",
   },
   {
-    id: 15,
+    id: 16,
     href: "https://cutie-romero.vercel.app",
     filename: "cuti.jpg",
     title: "Cutie Romero",
@@ -31,6 +31,17 @@ const projectsInfo = [
     tag1: "Three.js",
     tag2: "Javascript",
     tag3: "GSAP",
+  },
+   {
+    id: 15,
+    href: "https://www.instagram.com/p/CnPnO8dgXFE/",
+    filename: "prato.png",
+    title: "Archivo Prato",
+    description:
+      "An interactive installation developed in JavaScript using Pixi.js, shaders for visual effects, and motion detection via a Kinect device. This project showcases the photography archive of Virginia Molinari. It was exhibited at the Complejo Astronómico in Rosario, Argentina.",
+    tag1: "Javascript",
+    tag2: "Pixi.js",
+    tag3: "Kinectron",
   },
   {
     id: 14,
