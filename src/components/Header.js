@@ -15,7 +15,7 @@ export const Header = () => {
         />
       </div>
       <p className="leading-normal my-11">
-        With over 7 years of experience in the software industry, I stand out as a dedicated and creative professional specializing in front-end development. I have a keen eye for design and a passion for creating engaging user interfaces while prioritizing performance. I bring a unique blend of technical expertise and artistic vision to every project I undertake.
+        With over 7 years of experience in the software industry, I stand out as a dedicated and creative professional. I have a keen eye for design and a passion for creating engaging user interfaces while prioritizing performance. I bring a unique blend of technical expertise and artistic vision to every project I undertake.
       </p>
       <p className="my-16 leading-normal">
         Interested in hiring me or doing a project together?
