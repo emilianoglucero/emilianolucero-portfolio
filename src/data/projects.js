@@ -1,17 +1,17 @@
 const projectsInfo = [
-   {
-   id: 18,
+  {
+    id: 15,
     href: "https://blog-tech-two-khaki.vercel.app/",
     filename: "blog-tech.png",
     title: "I 🩶 my computer job",
     description:
-      "Writings, explorations and stuff. This blog is built with Next.js and TypeScript, utilizing GSAP for animations and Payload as the CMS. (It's a work in progress).",
+      "Writings, explorations and stuff. This blog is built with Next.js and TypeScript, utilizing GSAP for animations and Payload as the CMS. I'm collaborating with Ine Labarrère, who created the beautiful illustrations. (It's a work in progress.)",
     tag1: "Next.js",
     tag2: "GSAP",
     tag3: "Typescript",
-   },
-   {
-    id: 17,
+  },
+  {
+    id: 14,
     href: "https://bebeto-pizza.vercel.app/nuncasepuedehacermasrapido.html",
     filename: "nuncasepuedehacermasrapido.png",
     title: "Nunca se puede hacer más rápido",
@@ -22,7 +22,7 @@ const projectsInfo = [
     tag3: "Shaders",
   },
   {
-    id: 16,
+    id: 13,
     href: "https://cutie-romero.vercel.app",
     filename: "cuti.jpg",
     title: "Cutie Romero",
@@ -32,19 +32,19 @@ const projectsInfo = [
     tag2: "Javascript",
     tag3: "GSAP",
   },
-   {
-    id: 15,
+  {
+    id: 12,
     href: "https://www.instagram.com/p/CnPnO8dgXFE/",
     filename: "prato.png",
     title: "Archivo Prato",
     description:
-      "An interactive installation developed in JavaScript using Pixi.js, shaders for visual effects, and motion detection via a Kinect device. This project showcases the photography archive of Virginia Molinari. It was exhibited at the Complejo Astronómico in Rosario, Argentina.",
+      "This interactive installation was developed in collaboration with my friend Virginia Molinari, utilizing her extensive photography archive. Built with JavaScript and Pixi.js, it incorporates shaders for visual effects and motion detection via a Kinect device. The project was exhibited at the Complejo Astronómico in Rosario, Argentina.",
     tag1: "Javascript",
     tag2: "Pixi.js",
     tag3: "Kinectron",
   },
   {
-    id: 14,
+    id: 11,
     href: "https://github.com/emilianoglucero/emilianolucero-portfolio",
     filename: "portfolio.png",
     title: "Personal Portfolio Website",
@@ -54,19 +54,19 @@ const projectsInfo = [
     tag2: "TailwindCSS",
     tag3: "Gatsby",
   },
+  // {
+  //   id: 13,
+  //   href: "https://github.com/emilianoglucero/giphy-api-example",
+  //   filename: "giphy.jpg",
+  //   title: "Giphy searcher",
+  //   description:
+  //     "A super super super simple gif searcher powered by Giphy. An excuse to do some Unit Testing.",
+  //   tag1: "React",
+  //   tag2: "UnitTesting",
+  //   tag3: "Javascript",
+  // },
   {
-    id: 13,
-    href: "https://github.com/emilianoglucero/giphy-api-example",
-    filename: "giphy.jpg",
-    title: "Giphy searcher",
-    description:
-      "A super super super simple gif searcher powered by Giphy. An excuse to do some Unit Testing.",
-    tag1: "React",
-    tag2: "UnitTesting",
-    tag3: "Javascript",
-  },
-  {
-    id: 12,
+    id: 10,
     href: "https://github.com/emilianoglucero/twitter-bot",
     filename: "twitter.jpg",
     title: "Twitter Bot",
@@ -75,18 +75,18 @@ const projectsInfo = [
     tag2: "Javascript",
     tag3: "Express",
   },
+  // {
+  //   id: 11,
+  //   href: "https://www.alphatrainingcenter.com.ar/",
+  //   filename: "alpha.jpg",
+  //   title: "Alpha Training Center Dojo",
+  //   description: "Landing page made for the Alpha Training Center Dojo.",
+  //   tag1: "React",
+  //   tag2: "Gatsby",
+  //   tag3: "Sass",
+  // },
   {
-    id: 11,
-    href: "https://www.alphatrainingcenter.com.ar/",
-    filename: "alpha.jpg",
-    title: "Alpha Training Center Dojo",
-    description: "Landing page made for the Alpha Training Center Dojo.",
-    tag1: "React",
-    tag2: "Gatsby",
-    tag3: "Sass",
-  },
-  {
-    id: 10,
+    id: 9,
     href: "https://bebeto-pizza.vercel.app/compraventa.html",
     filename: "compraventa.jpg",
     title: "Compraventa",
@@ -96,59 +96,63 @@ const projectsInfo = [
     tag3: "",
   },
   {
-    id: 9,
+    id: 8,
     href: "https://ateitiscorp.com/",
     filename: "ateitis.jpg",
     title: "Ateitis Corp",
     description:
-      "Headless CMS and Ecommerce for Ateitis Corp made with React, Gatsby and Wordpress.",
+      "This project was developed in collaboration with my friend Alexis Boni. It features a landing page and ecommerce functionality built with React and Gatsby, using WordPress as the CMS and WooCommerce for the ecommerce platform.",
     tag1: "React",
     tag2: "GraphQL",
     tag3: "Wordpress",
   },
   {
-    id: 8,
+    id: 7,
     href:
       "https://chrome.google.com/webstore/detail/me-encanta-todo-eso/lelgaanomejijmiolbncggicogpalmcb",
     filename: "chrome.jpg",
     title: "Me encanta todo eso",
-    description: "Google Chrome plugin made to change the Facebook Desktop UI.",
+    description:
+      "This Google Chrome plugin transforms the Facebook Desktop UI by modifying the HTML and CSS to change the like count of each post to a large number of 'Love' reactions.",
     tag1: "Javascript",
     tag2: "ChromePlugin",
     tag3: "",
   },
   {
-    id: 7,
+    id: 6,
     href: "https://bebeto-pizza.vercel.app/screenshots.html",
     filename: "screenshots.png",
     title: "Screenshots",
-    description: "3D experience using Three.js to showcase a printed zine I made in 2019. (It's a work in progress).",
+    description:
+      "3D experience using Three.js to showcase a printed zine I made in 2019. (It's a work in progress).",
     tag1: "Three.js",
     tag2: "",
     tag3: "",
   },
   {
-    id: 6,
+    id: 5,
     href: "https://bebeto-pizza.vercel.app/dibuja.html",
     filename: "colorea.png",
     title: "Colorea un empresario",
-    description: "Net Art work. Coloring businessman figures from Argentina. (It's a work in progress).",
+    description:
+      "Net Art work. Coloring businessman figures from Argentina. (It's a work in progress).",
     tag1: "p5.js",
     tag2: "Node.js",
     tag3: "Google Cloud Storage",
   },
   {
-    id: 5,
+    id: 4,
     href: "https://bebeto-pizza.vercel.app/maradona.html",
     filename: "diego.jpg",
     title: "Para el pueblo lo mejor",
-    description: "Net Art work. Inspired in Diego Armando Maradona 💕. (It's a work in progress).",
+    description:
+      "Net Art work. Inspired in Diego Armando Maradona 💕. (It's a work in progress).",
     tag1: "Javascript",
     tag2: "p5.js",
     tag3: "",
   },
   {
-    id: 4,
+    id: 3,
     href: "https://bebeto-pizza.vercel.app/zarandraca.html",
     filename: "zarandraca.png",
     title: "El viaje de zarandraca",
@@ -158,18 +162,18 @@ const projectsInfo = [
     tag2: "Node.js",
     tag3: "p5.js",
   },
-  {
-    id: 3,
-    href:
-      "https://play.google.com/store/apps/details?id=com.lse.ar.rosario.art&hl=es&gl=US",
-    filename: "art.jpg",
-    title: "Asociación Rosarina de Tenis App",
-    description:
-      "Mobile Hybrid App for The Asociación Rosarina de Tenis made with Apache Cordova.",
-    tag1: "Javascript",
-    tag2: "ApacheCordova",
-    tag3: "Framework7",
-  },
+  // {
+  //   id: 3,
+  //   href:
+  //     "https://play.google.com/store/apps/details?id=com.lse.ar.rosario.art&hl=es&gl=US",
+  //   filename: "art.jpg",
+  //   title: "Asociación Rosarina de Tenis App",
+  //   description:
+  //     "Mobile Hybrid App for The Asociación Rosarina de Tenis made with Apache Cordova.",
+  //   tag1: "Javascript",
+  //   tag2: "ApacheCordova",
+  //   tag3: "Framework7",
+  // },
   {
     id: 2,
     href: "https://www.instagram.com/ar/532471514229195/",
