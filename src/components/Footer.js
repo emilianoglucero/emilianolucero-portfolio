@@ -23,7 +23,7 @@ export const Footer = () => {
       <div>
         {/* <p className="pt-24 pb-10">Find me on</p> */}
 
-        <div className="grid grid-cols-1 gap-2 mx-1 my-16 md:grid-cols-4 md:mx-16 lg:mx-56">
+        <div className="grid grid-cols-1 gap-2 mx-1 my-16 md:grid-cols-5 md:mx-16 lg:mx-56">
           <a
             className="transition-transform transform duration-250 hover:rotate-3"
             href="https://www.linkedin.com/in/emilianoglucero/"
