@@ -3,7 +3,7 @@ import { Image } from "../components/Image"
 
 export const Projects = ({ info }) => {
   return (
-    <div className="flex flex-col flex-1 max-w-sm min-h-full m-auto overflow-hidden transition duration-300 transform skew-y-12 rounded shadow-lg hover:shadow-md hover:opacity-80">
+    <div className="flex flex-col flex-1 max-w-sm min-h-full m-auto overflow-hidden transition duration-300 transform skew-y-12 rounded shadow-lg my-11 hover:shadow-md hover:opacity-80">
       <a
         className="transition duration-250 hover:scale-95"
         href={info.href}
