@@ -6,8 +6,8 @@ export const Header = () => {
   return (
     <div>
       <p className="my-5 leading-normal">
-        Hello, my name is <span className="font-semibold">Emiliano</span>.<br />
-        I'm a Front End Developer working remotely from Rosario, Argentina.
+       Hey there, I'm <span className="font-semibold">Emiliano</span>.<br />
+       Web Developer turning ideas into memorable web experiences.
       </p>
       <div className="my-11">
         <MainAnimation
