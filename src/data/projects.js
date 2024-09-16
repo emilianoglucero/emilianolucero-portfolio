@@ -1,7 +1,7 @@
 const projectsInfo = [
   {
     id: 15,
-    href: "https://blog-tech-two-khaki.vercel.app/",
+    href: "https://blog.emilianolucero.ar/",
     filename: "blog-tech.png",
     title: "I 🩶 my computer job",
     description:
