@@ -4,10 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-//Gatsby settings for the environment variables
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+// Gatsby settings for the environment variables
+require("dotenv").config()
 
 module.exports = {
   /* Your site config here */
@@ -15,7 +13,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [process.env.GA_TRACKING_ID],
+        trackingIds: [
+          process.env.GOOGLE_ANALYTICS_TRACKING_ID, // Uses the environment variable
+        ],
         pluginConfig: {
           head: true, // Ensure the script is in the head
         },
