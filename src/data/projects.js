@@ -5,7 +5,7 @@ const projectsInfo = [
     filename: "blog-tech.png",
     title: "I 🩶 my computer job",
     description:
-      "Writings, explorations and stuff. This blog is built with Next.js and TypeScript, utilizing GSAP for animations and Payload as the CMS. I'm collaborating with Ine Labarrère, who created the beautiful illustrations. (It's a work in progress.)",
+      "A dynamic platform showcasing original writings, technical explorations, curated photography collections, handcrafted playlists, and more.",
     tag1: "Next.js",
     tag2: "GSAP",
     tag3: "Typescript",
@@ -16,7 +16,7 @@ const projectsInfo = [
     filename: "nuncasepuedehacermasrapido.png",
     title: "Nunca se puede hacer más rápido",
     description:
-      "Playing with React Three Fiber, GSAP animations and shaders to showcase a printed zine I released in 2018. (It's a work in progress).",
+      "An interactive project using React Three Fiber, GSAP animations, and custom shaders to showcase a printed zine I released in 2018. This digital experience merges motion graphics and 3D rendering to bring the zine's content to life in a dynamic, immersive way.",
     tag1: "React Three Fiber",
     tag2: "GSAP",
     tag3: "Shaders",
@@ -49,7 +49,7 @@ const projectsInfo = [
     filename: "portfolio.png",
     title: "Personal Portfolio Website",
     description:
-      "Landing page for my portfolio (this site). A great excuse to use TailwindCSS, React and Gatsby.",
+      "A landing page for my portfolio (this site), built using React, Gatsby, and styled with TailwindCSS. This project serves as both a personal showcase and a playground to experiment with modern web development tools and best practices.",
     tag1: "React",
     tag2: "TailwindCSS",
     tag3: "Gatsby",
@@ -70,7 +70,8 @@ const projectsInfo = [
     href: "https://github.com/emilianoglucero/twitter-bot",
     filename: "twitter.jpg",
     title: "Twitter Bot",
-    description: "A twitter bot made with Javascript, Node.js and Express.",
+    description:
+      "A Twitter bot with a melancholic personality, developed using JavaScript, Node.js, and Express. This bot generates and posts sad or introspective tweets, exploring the emotional range of automated social media interactions.",
     tag1: "Node.js",
     tag2: "Javascript",
     tag3: "Express",
@@ -90,7 +91,8 @@ const projectsInfo = [
     href: "https://bebeto-pizza.vercel.app/compraventa.html",
     filename: "compraventa.jpg",
     title: "Compraventa",
-    description: "Net Art work inspired by a telegram group made with React.",
+    description:
+      "A project that reveals the inner dynamics of a Telegram group, offering an observational lens into the interactions and exchanges within this digital marketplace.",
     tag1: "NetArt",
     tag2: "React",
     tag3: "",
@@ -113,7 +115,7 @@ const projectsInfo = [
     filename: "chrome.jpg",
     title: "Me encanta todo eso",
     description:
-      "This Google Chrome plugin transforms the Facebook Desktop UI by modifying the HTML and CSS to change the like count of each post to a large number of 'Love' reactions.",
+      "A Google Chrome plugin that transforms the Facebook Desktop UI by altering the HTML and CSS to automatically inflate each post's like count into a large number of 'Love' reactions. This playful extension critiques social media engagement metrics.",
     tag1: "Javascript",
     tag2: "ChromePlugin",
     tag3: "",
@@ -124,7 +126,7 @@ const projectsInfo = [
     filename: "screenshots.png",
     title: "Screenshots",
     description:
-      "3D experience using Three.js to showcase a printed zine I made in 2019. (It's a work in progress).",
+      "A 3D experience developed with Three.js to showcase a printed zine I created in 2019. This project merges digital and physical media, offering an interactive way to explore the zine's content in a virtual environment.",
     tag1: "Three.js",
     tag2: "",
     tag3: "",
@@ -135,7 +137,7 @@ const projectsInfo = [
     filename: "colorea.png",
     title: "Colorea un empresario",
     description:
-      "Net Art work. Coloring businessman figures from Argentina. (It's a work in progress).",
+      "An interactive project inviting users to color illustrations of the richest Argentine businessmen. This playful yet thought-provoking piece encourages reflection on the figures shaping Argentina’s economy, blending art with social commentary.",
     tag1: "p5.js",
     tag2: "Node.js",
     tag3: "Google Cloud Storage",
@@ -146,7 +148,7 @@ const projectsInfo = [
     filename: "diego.jpg",
     title: "Para el pueblo lo mejor",
     description:
-      "Net Art work. Inspired in Diego Armando Maradona 💕. (It's a work in progress).",
+      "An experimental and visually striking tribute to Diego Armando Maradona. 💕.",
     tag1: "Javascript",
     tag2: "p5.js",
     tag3: "",
@@ -157,7 +159,7 @@ const projectsInfo = [
     filename: "zarandraca.png",
     title: "El viaje de zarandraca",
     description:
-      "Net Art and Video Game work dedicated to a friend. Playing with p5.js and phaser.io and inspired by Flappy Bird. (It's a work in progress).",
+      "A video game project dedicated to a close friend. Built with p5.js and Phaser.io, and inspired by the mechanics of Flappy Bird, it combines playful interactivity with a personal narrative, offering a nostalgic yet innovative gaming experience.",
     tag1: "Javascript",
     tag2: "Node.js",
     tag3: "p5.js",
@@ -179,7 +181,8 @@ const projectsInfo = [
     href: "https://www.instagram.com/ar/532471514229195/",
     filename: "instagram.jpg",
     title: "Bebeto Face Filter",
-    description: "Instagram face filter made with Spark AR Studio.",
+    description:
+      "An Instagram face filter created using Spark AR Studio for a music project. This filter enhances user engagement by blending artistic design with augmented reality, offering an interactive and visually compelling experience directly on social media.",
     tag1: "Spark",
     tag2: "Instagram",
     tag3: "",
@@ -190,7 +193,7 @@ const projectsInfo = [
     filename: "boca.jpg",
     title: "Abrí la voki",
     description:
-      "Net Art work. Playing with p5.js, access to camera device and facial recognition models. (It's a work in progress).",
+      "A Net Art project blending randomness with interactive technology, utilizing p5.js to access the camera and incorporate facial recognition models. The piece pushes the boundaries of user interaction and digital identity, dynamically transforming the viewer's face into part of the artwork in real time.",
     tag1: "NetArt",
     tag2: "Javascript",
     tag3: "p5.js",
