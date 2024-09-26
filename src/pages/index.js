@@ -27,7 +27,8 @@ export default function Home() {
       <SEO
         title="Home"
         description="Emiliano Lucero web dev portfolio"
-        image="/images/og-image.jpg"
+        // image="/images/og-image.jpg"
+        image="src/images/og/og-image.jpg"
       />
 
       <div className="container px-6 mx-auto font-mono text-4xl text-center my-14 md:px-12 lg:px-12 text-primary">
