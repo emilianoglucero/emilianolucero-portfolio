@@ -42,7 +42,7 @@ export const Footer = () => {
       <div>
         <p className="mt-32 mb-11">Find me on:</p>
 
-        <div className="grid grid-cols-1 gap-2 mx-1 md:grid-cols-6 md:mx-16 lg:mx-56">
+        <div className="flex flex-col justify-center gap-5 sm:gap-5 lg:gap-16 md:gap-11 sm:flex-row lg:flex-row">
           <a
             className="transition-transform transform duration-250 hover:rotate-3"
             href="https://www.linkedin.com/in/emilianoglucero/"
