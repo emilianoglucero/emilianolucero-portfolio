@@ -9,6 +9,12 @@ require("dotenv").config()
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Emiliano Lucero Web Dev Portfolio`,
+    description: `A creative developer with a passion for frontend development and design.`,
+    siteUrl: `https://www.emilianolucero.ar`,
+    author: `@emilianoglucero`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,

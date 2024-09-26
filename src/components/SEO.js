@@ -10,6 +10,7 @@ export default function SEO({ description, title, image }) {
           siteMetadata {
             title
             description
+            siteUrl
           }
         }
       }
