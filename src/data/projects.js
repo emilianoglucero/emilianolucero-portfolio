@@ -3,7 +3,7 @@ const projectsInfo = [
     id: 15,
     href: "https://blog.emilianolucero.ar/",
     filename: "blog-tech.png",
-    title: "I 🩶 my computer job",
+    title: "I 🖤 my computer job",
     description:
       "A dynamic platform showcasing original writings, technical explorations, curated photography collections, handcrafted playlists, and more.",
     tag1: "Next.js",
