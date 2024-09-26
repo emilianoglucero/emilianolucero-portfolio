@@ -27,6 +27,7 @@
     "gatsby-plugin-manifest": "^2.9.1",
     "gatsby-plugin-optimize-svgs": "^1.0.4",
     "gatsby-plugin-postcss": "^3.4.0",
+    "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-sharp": "^2.9.0",
@@ -35,6 +36,7 @@
     "postcss": "^8.2.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
     "react-p5-wrapper": "^2.3.0",
     "tailwindcss": "^2.0.2"
   },

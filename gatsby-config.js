@@ -30,17 +30,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Emiliano Lucero Portfolio",
+        name: "Emiliano Lucero Web Dev Portfolio",
         short_name: "Emiliano Lucero",
         start_url: "/",
         background_color: "#f7f0eb",
-        theme_color: "#a2466c",
+        theme_color: "#60D800",
         display: "standalone",
         icon: "src/images/favicon.png",
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     // 'gatsby-plugin-optimize-svgs',
     {
       resolve: `gatsby-source-filesystem`,
