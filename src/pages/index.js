@@ -24,12 +24,20 @@ export default function Home() {
   ) : (
     <>
       <P5 />
-      <SEO
-        title="Home"
-        description="Emiliano Lucero web dev portfolio"
-        // image="/images/og-image.jpg"
-        image="src/images/og/og-image.jpg"
-      />
+      <Helmet>
+        <title>Emiliano Lucero Web Dev Portfolio</title>
+        <meta property="og:title" content="Emiliano Lucero Web Dev Portfolio" />
+        <meta
+          property="og:description"
+          content="A skilled full-stack developer with 7+ years of experience in the software industry"
+        />
+        <meta
+          property="og:image"
+          content="https://storage.googleapis.com/bebeto-pizza-dibuja/og-images/og-image-portfolio.jpg"
+        />
+        <meta property="og:url" content="https://www.emilianolucero.ar/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
 
       <div className="container px-6 mx-auto font-mono text-4xl text-center my-14 md:px-12 lg:px-12 text-primary">
         <Header />
