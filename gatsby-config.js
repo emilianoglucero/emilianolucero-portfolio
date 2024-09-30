@@ -10,7 +10,7 @@ require("dotenv").config()
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      // resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
           process.env.GOOGLE_ANALYTICS_TRACKING_ID, // Uses the environment variable
