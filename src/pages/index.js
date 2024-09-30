@@ -1,81 +1,67 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 
-import P5 from "../p5/p5"
-import Loading from "../components/Loading"
+// import P5 from "../p5/p5"
 
 import projectsInfo from "../data/projects"
 import { Projects } from "../components/Projects"
 import { Header } from "../components/Header"
 import { Footer } from "../components/Footer"
-import { Helmet } from "react-helmet"
+import gsap from "gsap"
+import useIsomorphicLayoutEffect from "../hooks/use-isomorphic-layout-effect"
+import SEO from "../components/SEO"
+import IntroLoader from "../components/IntroLoader"
+import P5 from "../p5/p5"
 
 export default function Home() {
-  const [isLoadingDOM, setIsLoadingDOM] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => {
-      //window.addEventListener('load', setIsLoading(false));
-      window.addEventListener("DOMContentLoaded", setIsLoadingDOM(false))
-    }, 3000)
+  useIsomorphicLayoutEffect(() => {
+    gsap.to(".main-container", {
+      opacity: 1,
+      delay: 6,
+      duration: 1,
+      ease: "power2.inOut",
+    })
+    gsap.to(".main-container", {
+      position: "relative",
+      zIndex: 1,
+      delay: 8.3,
+    })
+    gsap.to(".loader-container", {
+      display: "none",
+      delay: 7.5,
+    })
   }, [])
+  return (
+    <div>
+      <div
+        className="w-full h-full bg-white opacity-0 main-container"
+        style={{
+          position: "fixed",
+        }}
+      >
+        <SEO />
+        <P5 />
 
-  return isLoadingDOM ? (
-    <Loading />
-  ) : (
-    <>
-      <P5 />
-      <Helmet>
-        <title>Emiliano Lucero the Web Dev</title>
-        <meta property="og:title" content="Emiliano Lucero the Web Dev" />
-        <meta
-          property="og:description"
-          content="A skilled full-stack developer with 7+ years of experience in the software industry"
-        />
-        <meta
-          property="og:image"
-          content="https://storage.googleapis.com/bebeto-pizza-dibuja/og-images/og-image-portfolio.jpg"
-        />
-        <meta property="og:url" content="https://www.emilianolucero.ar/" />
-        <meta property="og:type" content="website" />
+        <div className="container px-6 mx-auto font-mono text-4xl text-center my-14 md:px-12 lg:px-12 text-primary">
+          <Header />
 
-        {/* Facebook */}
-        <meta property="og:title" content="Emiliano Lucero the Web Dev" />
-        <meta
-          property="og:description"
-          content="A skilled full-stack developer with 7+ years of experience in the software industry"
-        />
-        <meta
-          property="og:image"
-          content="https://storage.googleapis.com/bebeto-pizza-dibuja/og-images/og-image-portfolio.jpg"
-        />
-        <meta property="og:url" content="https://www.emilianolucero.ar/" />
-        <meta property="og:type" content="website" />
+          <div className="grid content-center justify-center grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {projectsInfo.map(info => (
+              <Projects key={info.id} info={info} />
+            ))}
+          </div>
 
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.emilianolucero.ar/" />
-        <meta property="twitter:title" content="Emiliano Lucero the Web Dev" />
-        <meta
-          property="twitter:description"
-          content="A skilled full-stack developer with 7+ years of experience in the software industry"
-        />
-        <meta
-          property="twitter:image"
-          content="https://storage.googleapis.com/bebeto-pizza-dibuja/og-images/og-image-portfolio.jpg"
-        />
-      </Helmet>
-
-      <div className="container px-6 mx-auto font-mono text-4xl text-center my-14 md:px-12 lg:px-12 text-primary">
-        <Header />
-
-        <div className="grid content-center justify-center grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projectsInfo.map(info => (
-            <Projects key={info.id} info={info} />
-          ))}
+          <Footer />
         </div>
-
-        <Footer />
       </div>
-    </>
+
+      <div
+        className="flex flex-col w-full h-screen loader-container"
+        style={{
+          backgroundColor: "#f5f5f5",
+        }}
+      >
+        <IntroLoader />
+      </div>
+    </div>
   )
 }
