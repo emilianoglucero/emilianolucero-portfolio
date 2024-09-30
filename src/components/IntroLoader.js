@@ -103,7 +103,7 @@ const IntroLoader = () => {
           >
             {i === 0 || i === 4 ? (
               <div
-                className="marquee relative flex gap-20 font-['Neue_Montreal'] text-sm uppercase"
+                className="marquee relative flex md:gap-20 gap-3 font-['Neue_Montreal'] text-sm uppercase"
                 style={{
                   left: "100vw",
                   width: "300vw",
