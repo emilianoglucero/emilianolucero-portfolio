@@ -1,7 +1,7 @@
 const projectsInfo = [
   {
     id: 15,
-    href: "https://blog.emilianolucero.ar/",
+    href: "https://blog.emilianolucero.info/",
     filename: "blog-tech.png",
     title: "I 🖤 my computer job",
     description:
