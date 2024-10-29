@@ -8,7 +8,7 @@ const SEO = () => (
     <meta property="og:title" content="Emiliano Lucero the Web Dev" />
     <meta
       property="og:description"
-      content="A skilled full-stack developer with 7+ years of experience in the software industry"
+      content="Web Developer turning ideas into memorable digital experiences"
     />
     <meta
       property="og:image"
@@ -21,7 +21,7 @@ const SEO = () => (
     <meta property="og:title" content="Emiliano Lucero the Web Dev" />
     <meta
       property="og:description"
-      content="A skilled full-stack developer with 7+ years of experience in the software industry"
+      content="Web Developer turning ideas into memorable digital experiences"
     />
     <meta
       property="og:image"
@@ -36,7 +36,7 @@ const SEO = () => (
     <meta property="twitter:title" content="Emiliano Lucero the Web Dev" />
     <meta
       property="twitter:description"
-      content="A skilled full-stack developer with 7+ years of experience in the software industry"
+      content="Web Developer turning ideas into memorable digital experiences"
     />
     <meta
       property="twitter:image"
