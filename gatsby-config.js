@@ -8,6 +8,13 @@
 require("dotenv").config()
 
 module.exports = {
+  siteMetadata: {
+    title: "Emiliano Lucero Web Dev Portfolio",
+    description:
+      "Web Developer turning ideas into memorable digital experiences",
+    author: "@emilianolucero",
+    siteUrl: "https://www.emilianolucero.info",
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -32,12 +39,13 @@ module.exports = {
         name: "Emiliano Lucero Web Dev Portfolio",
         short_name: "Emiliano Lucero",
         start_url: "/",
-        background_color: "#f7f0eb",
-        theme_color: "#60D800",
+        background_color: "rgb(240, 240, 240)",
+        theme_color: "rgb(253, 200, 246)",
         display: "standalone",
         icon: "src/images/favicon.png",
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -46,6 +54,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: "https://www.emilianolucero.info",
+        sitemap: "https://www.emilianolucero.info/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
   ],
