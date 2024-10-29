@@ -9,8 +9,6 @@
 }
 
 ::selection {
-  /* background: #4cd832;
-  color: rgb(253, 200, 246); */
   background: var(--custom-blue);
   color: white;
 }
