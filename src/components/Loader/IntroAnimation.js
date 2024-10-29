@@ -22,7 +22,7 @@ const IntroAnimation = () => {
         opacity: 0,
         duration: 0.25,
         ease: "power2.inOut",
-        delay: 6.5,
+        delay: 6.4,
       })
     }
 
