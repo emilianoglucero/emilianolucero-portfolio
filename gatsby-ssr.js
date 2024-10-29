@@ -2,12 +2,13 @@
 
 import React from "react"
 
-export const onRenderBody = ({ setHeadComponents }) => {
+export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
+  setHtmlAttributes({ lang: "en" })
   setHeadComponents([
     <link
       key="ft88"
       rel="preload"
-      href="src/fonts/FT88-School.ttf"
+      href="/fonts/FT88-School.ttf"
       as="font"
       type="font/ttf"
       crossOrigin="anonymous"
@@ -15,10 +16,17 @@ export const onRenderBody = ({ setHeadComponents }) => {
     <link
       key="nb_international_pro"
       rel="preload"
-      href="src/fonts/nb_international_pro_regular-webfont.ttf"
+      href="/fonts/nb_international_pro_regular-webfont.ttf"
       as="font"
       type="font/ttf"
       crossOrigin="anonymous"
+    />,
+    <link
+      key="preload-animation"
+      rel="preload"
+      href="src/images/animations/animation.webp"
+      as="image"
+      type="image/webp"
     />,
   ])
 }
