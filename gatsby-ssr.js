@@ -22,11 +22,11 @@ export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
       crossOrigin="anonymous"
     />,
     <link
-      key="preload-animation"
+      key="preload-video"
       rel="preload"
-      href="/images/animation.webp"
-      as="image"
-      type="image/webp"
+      href="/videos/animation.webm"
+      as="video"
+      type="video/webm"
     />,
   ])
 }

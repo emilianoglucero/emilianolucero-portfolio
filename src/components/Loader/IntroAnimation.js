@@ -2,8 +2,6 @@ import React, { useRef } from "react"
 import gsap from "gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
 
-import "./IntroAnimation.css"
-
 const IntroAnimation = () => {
   const videoRef = useRef(null)
 
@@ -14,6 +12,9 @@ const IntroAnimation = () => {
         duration: 1,
         ease: "power2.inOut",
         delay: 2,
+        onStart: () => {
+          videoRef.current.play()
+        },
       })
     }
 
@@ -23,6 +24,10 @@ const IntroAnimation = () => {
         duration: 0.25,
         ease: "power2.inOut",
         delay: 6.4,
+        onComplete: () => {
+          videoRef.current.pause()
+          videoRef.current.currentTime = 0 // Reset video to the beginning
+        },
       })
     }
 
@@ -31,12 +36,14 @@ const IntroAnimation = () => {
   }, [])
 
   return (
-    <div className="intro-animation-wrapper">
-      <img
+    <div className="w-full h-full intro-animation-wrapper">
+      <video
         ref={videoRef}
-        src="/images/animation.webp"
-        className="animation-container"
+        src="/videos/animation.webm" // Update the path to your video file
+        className="animation-container w-[480px] h-[270px] sm:w-[960px] sm:h-[540px] object-cover"
         alt="Intro animation of Emi name moving"
+        muted
+        playsInline
       />
     </div>
   )
