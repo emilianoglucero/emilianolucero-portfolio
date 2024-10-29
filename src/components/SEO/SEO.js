@@ -5,6 +5,10 @@ import { Helmet } from "react-helmet"
 const SEO = () => (
   <Helmet>
     <title>Emiliano Lucero the Web Dev</title>
+    <meta
+      name="description"
+      content="Web Developer turning ideas into memorable digital experiences"
+    />
     <meta property="og:title" content="Emiliano Lucero the Web Dev" />
     <meta
       property="og:description"
