@@ -1,0 +1,26 @@
+.intro-animation-container {
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.intro-loader-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  background-color: var(--custom-pink);
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+
+.marquee {
+  left: 100vw;
+  width: 300vw;
+  color: var(--custom-blue);
+}

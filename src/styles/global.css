@@ -3,3 +3,34 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --custom-blue: rgb(66, 168, 232);
+  --custom-pink: rgb(253, 200, 246);
+}
+
+::selection {
+  background: var(--custom-blue);
+  color: white;
+}
+
+button:hover {
+  color: white;
+}
+
+@layer base {
+  @font-face {
+    font-family: "ft88";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/FT88-School.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "nb_international_pro";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/nb_international_pro_regular-webfont.ttf)
+      format("truetype");
+  }
+}

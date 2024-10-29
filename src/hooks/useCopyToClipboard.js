@@ -7,10 +7,8 @@ const useCopyToClipboard = () => {
     try {
       await navigator.clipboard.writeText(content)
       setIsCopied(true)
-      console.log("Copied to clipboard:", content)
     } catch (error) {
       setIsCopied(false)
-      console.error("Unable to copy to clipboard:", error)
     }
   }
 
@@ -24,9 +22,20 @@ const CopyToClipboardButton = ({ content }) => {
     <div>
       <button
         onClick={() => copyToClipboard(content)}
-        className="px-8 py-2 text-green-600 uppercase transition duration-300 border border-green-600 shadow-sm max-w-max hover:shadow-md"
+        className="px-8 py-2 uppercase transition duration-300 border shadow-sm max-w-max hover:shadow-md hover:bg-blue-500 border-custom-blue"
+        style={{
+          transition: "transform 0.3s, border-color 0.3s",
+        }}
+        onMouseEnter={e => {
+          e.target.style.borderColor = "transparent"
+          e.target.style.transform = "translateY(-3px)"
+        }}
+        onMouseLeave={e => {
+          e.target.style.borderColor = "rgb(66, 168, 232)"
+          e.target.style.transform = "translateY(0)"
+        }}
       >
-        {isCopied ? "Copied!" : "Copy Email"}
+        {isCopied ? "copied!" : "copy email"}
       </button>
     </div>
   )
