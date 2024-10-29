@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import HeaderAnimation from "./HeaderAnimation"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
 import gsap from "gsap"
