@@ -61,6 +61,7 @@ export const Footer = () => {
             href="https://www.linkedin.com/in/emilianoglucero/"
             rel="noreferrer"
             target="_blank"
+            aria-label="Linkedin"
           >
             <FontAwesomeIcon
               aria-label="Linkedin"
@@ -74,6 +75,7 @@ export const Footer = () => {
             href="https://github.com/emilianoglucero"
             rel="noreferrer"
             target="_blank"
+            aria-label="Github"
           >
             <FontAwesomeIcon
               aria-label="Github"
@@ -87,6 +89,7 @@ export const Footer = () => {
             href="mailto:emilianoglucero@gmail.com"
             rel="noreferrer"
             target="_blank"
+            aria-label="Email"
           >
             <FontAwesomeIcon
               aria-label="Email"
@@ -100,6 +103,7 @@ export const Footer = () => {
             href="https://www.youtube.com/user/emilianogaston5000"
             rel="noreferrer"
             target="_blank"
+            aria-label="YouTube"
           >
             <FontAwesomeIcon
               aria-label="YouTube"
@@ -113,6 +117,7 @@ export const Footer = () => {
             href="https://x.com/emilianoglucero"
             rel="noreferrer"
             target="_blank"
+            aria-label="Twitter"
           >
             <FontAwesomeIcon
               aria-label="X"
@@ -126,6 +131,7 @@ export const Footer = () => {
             href="https://www.instagram.com/emilianogiannakopoulos/"
             rel="noreferrer"
             target="_blank"
+            aria-label="Instagram"
           >
             <FontAwesomeIcon
               aria-label="Instagram"
@@ -139,6 +145,7 @@ export const Footer = () => {
             href="https://www.are.na/emiliano-lucero/channels"
             rel="noreferrer"
             target="_blank"
+            aria-label="Arena"
           >
             <img
               src={arenaIcon}
