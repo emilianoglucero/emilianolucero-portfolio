@@ -1,7 +1,7 @@
 import React, { useRef } from "react"
 import gsap from "gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
-import animation from "../../animations/animation.webp"
+import animation from "../../images/animations/animation.webp"
 import "./IntroAnimation.css"
 
 const IntroAnimation = () => {

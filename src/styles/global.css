@@ -23,14 +23,13 @@ button:hover {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(../fonts/FT88-School.ttf) format("truetype");
+    src: url(/fonts/FT88-School.ttf) format("truetype");
   }
   @font-face {
     font-family: "nb_international_pro";
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url(../fonts/nb_international_pro_regular-webfont.ttf)
-      format("truetype");
+    src: url(/fonts/nb_international_pro_regular-webfont.ttf) format("truetype");
   }
 }
