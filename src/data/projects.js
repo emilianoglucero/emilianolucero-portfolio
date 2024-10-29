@@ -3,7 +3,7 @@ const projectsInfo = [
     id: 15,
     href: "https://blog.emilianolucero.info/",
     imgSrc: "blog.jpg",
-    videoSrc: "../videos/blog.mp4",
+    videoSrc: "/videos/blog.mp4",
     title: "I 🖤 my computer job",
     description:
       "Designed and developed a dynamic blog platform showcasing original writings, technical explorations, curated photography collections, handcrafted playlists, and more.",
@@ -18,7 +18,7 @@ const projectsInfo = [
     id: 13,
     href: "https://cutie-romero.vercel.app",
     imgSrc: "cutie.jpg",
-    videoSrc: "../videos/cutie.mp4",
+    videoSrc: "/videos/cutie.mp4",
     title: "Cutie Romero",
     description:
       "Designed and developed a Three.js experience that explores the interaction between Twitter fandom and professional football players featuring interactive elements, animations, physics, and shaders.",
@@ -33,7 +33,7 @@ const projectsInfo = [
     id: 12,
     href: "https://www.instagram.com/p/CnPnO8dgXFE/",
     imgSrc: "prato.jpg",
-    videoSrc: "../videos/prato.mp4",
+    videoSrc: "/videos/prato.mp4",
     title: "Archivo Prato",
     description:
       "This interactive installation was designed and developed in collaboration with my friend Virginia Molinari, utilizing her extensive photography archive. Built with JavaScript and Pixi.js, it incorporates shaders for visual effects and motion detection via a Kinect device. The project was exhibited at the Complejo Astronómico in Rosario, Argentina.",
@@ -63,7 +63,7 @@ const projectsInfo = [
     id: 14,
     href: "https://bebeto-pizza.vercel.app/nuncasepuedehacermasrapido.html",
     imgSrc: "nuncasepuedehacermasrapido.jpg",
-    videoSrc: "../videos/nuncasepuedehacermasrapido.mp4",
+    videoSrc: "/videos/nuncasepuedehacermasrapido.mp4",
     title: "Nunca se puede hacer más rápido",
     description:
       "Designed and developed an interactive project using React Three Fiber, GSAP animations, and custom shaders to showcase a printed zine I released in 2018. This digital experience merges motion graphics and 3D rendering to bring the zine's content to life in a dynamic, immersive way.",
@@ -111,7 +111,7 @@ const projectsInfo = [
     id: 9,
     href: "https://bebeto-pizza.vercel.app/compraventa.html",
     imgSrc: "compraventa.jpg",
-    videoSrc: "../videos/compraventa.mp4",
+    videoSrc: "/videos/compraventa.mp4",
     title: "Compraventa",
     description:
       "Designed and developed a project that reveals the inner dynamics of a Telegram group, offering an observational lens into the interactions and exchanges within this digital marketplace.",
@@ -138,7 +138,7 @@ const projectsInfo = [
     id: 6,
     href: "https://bebeto-pizza.vercel.app/screenshots.html",
     imgSrc: "screenshots.jpg",
-    videoSrc: "../videos/screenshots.mp4",
+    videoSrc: "/videos/screenshots.mp4",
     title: "Screenshots",
     description:
       "Designed and developed a 3D experience with Three.js to showcase a printed zine I created in 2019. This project merges digital and physical media, offering an interactive way to explore the zine's content in a virtual environment.",
@@ -153,7 +153,7 @@ const projectsInfo = [
     id: 5,
     href: "https://bebeto-pizza.vercel.app/dibuja.html",
     imgSrc: "dibuja.jpg",
-    videoSrc: "../videos/dibuja.mp4",
+    videoSrc: "/videos/dibuja.mp4",
     title: "Colorea un empresario",
     description:
       "Designed and developed an interactive project inviting users to color illustrations of the richest Argentine businessmen. This playful yet thought-provoking piece encourages reflection on the figures shaping Argentina’s economy, blending art with social commentary.",
@@ -168,7 +168,7 @@ const projectsInfo = [
     id: 4,
     href: "https://bebeto-pizza.vercel.app/maradona.html",
     imgSrc: "maradona.jpg",
-    videoSrc: "../videos/maradona.mp4",
+    videoSrc: "/videos/maradona.mp4",
     title: "Para el pueblo lo mejor",
     description:
       "Designed and developed an experimental and visually striking tribute to Diego Armando Maradona. 💕.",
@@ -183,7 +183,7 @@ const projectsInfo = [
     id: 3,
     href: "https://bebeto-pizza.vercel.app/zarandraca.html",
     imgSrc: "zarandraca.jpg",
-    videoSrc: "../videos/zarandraca.mp4",
+    videoSrc: "/videos/zarandraca.mp4",
     title: "El viaje de zarandraca",
     description:
       "Designed and developed a video game project dedicated to a close friend. Built with p5.js and Phaser.io, and inspired by the mechanics of Flappy Bird, it combines playful interactivity with a personal narrative, offering a nostalgic yet innovative gaming experience.",
@@ -222,7 +222,7 @@ const projectsInfo = [
     id: 1,
     href: "https://bebeto-pizza.vercel.app/voca.html",
     imgSrc: "voca.jpg",
-    videoSrc: "videos/voca.mp4",
+    videoSrc: "/videos/voca.mp4",
     title: "Abrí la voki",
     description:
       "Designed and developed a Net Art project blending randomness with interactive technology, utilizing p5.js to access the camera and incorporate facial recognition models. The piece pushes the boundaries of user interaction and digital identity, dynamically transforming the viewer's face into part of the artwork in real-time.",
@@ -237,7 +237,7 @@ const projectsInfo = [
     id: 8,
     href: "https://ateitiscorp.com/",
     imgSrc: "ateitis.jpg",
-    videoSrc: "../videos/ateitis.mp4",
+    videoSrc: "/videos/ateitis.mp4",
     title: "Ateitis Corp",
     description:
       "This project was developed in collaboration with my friend Alexis Boni. It features a landing page and e-commerce functionality built with React and Gatsby, using WordPress as the CMS and WooCommerce for the e-commerce platform.",
@@ -252,7 +252,7 @@ const projectsInfo = [
     id: 16,
     href: "https://www.instagram.com/p/B-8N5VHFE6B/",
     imgSrc: "virtual-festival.jpg",
-    videoSrc: "../videos/virtual-festival.mp4",
+    videoSrc: "/videos/virtual-festival.mp4",
     title: "Virtual Musical Festival",
     description:
       "Organized and ran a virtual musical festival during the pandemic, successfully hosting two editions entirely online. Utilized Mozilla Hubs as a virtual platform, hosted on AWS, and customized the design of the virtual environment to create an immersive and interactive experience for attendees. Managed all aspects of the festival including technical setup, design customization, and user experience.",
