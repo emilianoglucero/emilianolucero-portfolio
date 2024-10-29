@@ -9,6 +9,7 @@ const SEO = () => (
       name="description"
       content="Web Developer turning ideas into memorable digital experiences"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Emiliano Lucero the Web Dev" />
     <meta
       property="og:description"

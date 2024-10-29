@@ -1,8 +1,8 @@
 .p5-background {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100vh;
-  min-height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
