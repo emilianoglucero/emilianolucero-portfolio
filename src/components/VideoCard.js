@@ -9,6 +9,7 @@ const VideoCard = ({ info }) => {
       href={info.href}
       rel="noreferrer"
       target="_blank"
+      aria-label={`View project: ${info.title}`}
     >
       <HoverVideoPlayer
         videoSrc={info.videoSrc}
@@ -20,6 +21,7 @@ const VideoCard = ({ info }) => {
               height: "100%",
               objectFit: "cover",
             }}
+            alt={`Thumbnail for ${info.title}`} // Add alt text for the image
           />
         }
       />
