@@ -24,7 +24,7 @@ export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
     <link
       key="preload-animation"
       rel="preload"
-      href="src/images/animations/animation.webp"
+      href="/images/animation.webp"
       as="image"
       type="image/webp"
     />,

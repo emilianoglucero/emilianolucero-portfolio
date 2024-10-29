@@ -1,7 +1,7 @@
 import React, { useRef } from "react"
 import gsap from "gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
-import animation from "../../images/animations/animation.webp"
+
 import "./IntroAnimation.css"
 
 const IntroAnimation = () => {
@@ -34,7 +34,7 @@ const IntroAnimation = () => {
     <div className="intro-animation-wrapper">
       <img
         ref={videoRef}
-        src={animation}
+        src="/images/animation.webp"
         className="animation-container"
         alt="Intro animation of Emi name moving"
       />
