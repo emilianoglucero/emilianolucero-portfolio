@@ -9,8 +9,9 @@ function HeaderAnimation() {
         data={Animated}
         style={{ width: "80%", margin: "auto" }}
         className="svg"
+        aria-label="Animated SVG of Emi" // Add aria-label for accessibility
       >
-        svg-animation
+        :)
       </object>
     </div>
   )
