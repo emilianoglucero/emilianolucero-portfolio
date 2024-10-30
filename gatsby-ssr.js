@@ -28,5 +28,12 @@ export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
       as="video"
       type="video/webm"
     />,
+    <link
+      key="preload-video-2"
+      rel="preload"
+      href="/videos/animation.mov"
+      as="video"
+      type="video/quicktime"
+    />,
   ])
 }
