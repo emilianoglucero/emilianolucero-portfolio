@@ -57,7 +57,7 @@ export const Footer = () => {
         <div className="relative grid mt-32 h-80 mb-11">
           <p className="self-center">Find me on</p>
           <a
-            className="absolute transition-transform transform duration-250 hover:rotate-3 md:top-[27%] md:left-[21.5%] top-[-5%] left-[30%]"
+            className="absolute transition-transform transform duration-300 hover:row-span-12 hover:rotate-6 md:top-[27%] md:left-[21.5%] top-[-5%] left-[30%]"
             href="https://www.linkedin.com/in/emilianoglucero/"
             rel="noreferrer"
             target="_blank"
@@ -71,7 +71,7 @@ export const Footer = () => {
             />
           </a>
           <a
-            className="absolute transition-transform transform duration-250 hover:rotate-3 md:top-[77%] md:left-[30.5%] top-[65%] left-[10%]"
+            className="absolute transition-transform transform duration-300 hover:rotate-6 md:top-[77%] md:left-[30.5%] top-[65%] left-[10%]"
             href="https://github.com/emilianoglucero"
             rel="noreferrer"
             target="_blank"
@@ -85,7 +85,7 @@ export const Footer = () => {
             />
           </a>
           <a
-            className="absolute transition-transform transform duration-250 hover:rotate-3 md:top-[0%] md:left-[38%] top-[10%] left-[61%]"
+            className="absolute transition-transform transform duration-300 hover:rotate-6 md:top-[0%] md:left-[38%] top-[10%] left-[61%]"
             href="mailto:emilianoglucero@gmail.com"
             rel="noreferrer"
             target="_blank"
@@ -99,7 +99,7 @@ export const Footer = () => {
             />
           </a>
           <a
-            className="absolute transition-transform transform duration-250 hover:rotate-3 md:top-[73%] md:left-[44.5%] top-[95%] left-[30%]"
+            className="absolute transition-transform transform duration-300 hover:rotate-6 md:top-[73%] md:left-[44.5%] top-[95%] left-[30%]"
             href="https://www.youtube.com/user/emilianogaston5000"
             rel="noreferrer"
             target="_blank"
@@ -113,7 +113,7 @@ export const Footer = () => {
             />
           </a>
           <a
-            className="absolute transition-transform transform duration-250 hover:rotate-3 md:top-[80%] md:left-[59.5%] top-[85%] left-[67%]"
+            className="absolute transition-transform transform duration-300 hover:rotate-6 md:top-[80%] md:left-[59.5%] top-[85%] left-[67%]"
             href="https://x.com/emilianoglucero"
             rel="noreferrer"
             target="_blank"
@@ -127,7 +127,7 @@ export const Footer = () => {
             />
           </a>
           <a
-            className="absolute transition-transform transform duration-250 hover:rotate-3 md:top-[50%] md:left-[72.5%] top-[22%] left-[3%]"
+            className="absolute transition-transform transform duration-300 hover:rotate-6 md:top-[50%] md:left-[72.5%] top-[22%] left-[3%]"
             href="https://www.instagram.com/emilianogiannakopoulos/"
             rel="noreferrer"
             target="_blank"
@@ -141,7 +141,7 @@ export const Footer = () => {
             />
           </a>
           <a
-            className="absolute transition-transform transform duration-250 hover:rotate-3 md:top-[9%] md:left-[56%] top-[54%] left-[71%]"
+            className="absolute transition-transform transform duration-300 hover:rotate-6 md:top-[9%] md:left-[56%] top-[54%] left-[71%]"
             href="https://www.are.na/emiliano-lucero/channels"
             rel="noreferrer"
             target="_blank"
@@ -154,8 +154,10 @@ export const Footer = () => {
             />
           </a>
         </div>
-        <div className="block mt-40 rotate-180 mb-11 font-ft88 hover:rotate-0">
-          stay curious!
+        <div className="flex justify-center mt-40 mb-11">
+          <span className="block rotate-180 hover:rotate-0 font-ft88">
+            stay curious!
+          </span>
         </div>
       </div>
     </>
