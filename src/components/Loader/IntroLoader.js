@@ -2,7 +2,7 @@ import React from "react"
 import IntroAnimation from "./IntroAnimation"
 import gsap from "gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
-import "./IntroLoader.css" // Import the CSS file
+import "./IntroLoader.css"
 
 const Marquee = () => (
   <div className="relative flex gap-3 text-sm marquee md:gap-20">
