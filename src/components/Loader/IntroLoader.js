@@ -4,15 +4,15 @@ import gsap from "gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
 import "./IntroLoader.css"
 
-const Marquee = () => (
+const Marquee = React.memo(() => (
   <div className="relative flex gap-3 text-sm marquee md:gap-20">
-    {[...Array(20)].map((_, j) => (
-      <p key={j}>~~-</p>
+    {[...Array(18)].map((_, j) => (
+      <span key={j}>~~-</span>
     ))}
   </div>
-)
+))
 
-const Bar = ({ index }) => (
+const Bar = React.memo(({ index }) => (
   <div
     className={`bar flex-1 w-full py-6 -mt-px ${
       index === 4 ? "flex flex-col justify-end" : ""
@@ -20,7 +20,7 @@ const Bar = ({ index }) => (
   >
     {(index === 0 || index === 4) && <Marquee />}
   </div>
-)
+))
 
 const IntroLoader = () => {
   useIsomorphicLayoutEffect(() => {
@@ -95,4 +95,4 @@ const IntroLoader = () => {
   )
 }
 
-export default IntroLoader
+export default React.memo(IntroLoader)
