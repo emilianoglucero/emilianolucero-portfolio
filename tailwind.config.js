@@ -30,7 +30,7 @@ module.exports = {
     },
     backgroundColor: theme => ({
       ...theme("colors"),
-      primary: "#F8E71C",
+      primary: "rgb(239, 240, 51)",
       secondary: "rgb(253, 200, 246)",
     }),
     fontFamily: {

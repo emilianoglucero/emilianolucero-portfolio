@@ -6,6 +6,7 @@
 :root {
   --custom-blue: rgb(66, 168, 232);
   --custom-pink: rgb(253, 200, 246);
+  --custom-purple: rgb(185, 174, 215);
 }
 
 ::selection {
