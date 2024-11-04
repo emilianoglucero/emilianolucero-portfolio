@@ -12,7 +12,7 @@ const IntroAnimation = () => {
     } else if (isMobile) {
       return "/videos/animation-short.webm"
     } else {
-      return "/videos/animation-full.webm"
+      return "/videos/animation-safari-full.mov"
     }
   })
   const [videoType, setVideoType] = useState(() => {
