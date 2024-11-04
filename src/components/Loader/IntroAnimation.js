@@ -1,22 +1,20 @@
 import React, { useRef, useEffect, useState } from "react"
 import { gsap } from "../../lib/gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
-import { isMobile } from "react-device-detect"
 import "./IntroAnimation.css"
 
 const IntroAnimation = () => {
   const videoRef = useRef(null)
   const [videoSrc, setVideoSrc] = useState("")
   const [videoType, setVideoType] = useState("")
+  const [isMobileDevice, setIsMobileDevice] = useState(false)
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase()
     const isSafariBrowser = /^((?!chrome|android).)*safari/i.test(userAgent)
     const isMobileDevice = /mobile|android|iphone|ipad|phone/i.test(userAgent)
 
-    console.log("User Agent:", userAgent)
-    console.log("isSafariBrowser:", isSafariBrowser)
-    console.log("isMobileDevice:", isMobileDevice)
+    setIsMobileDevice(isMobileDevice)
 
     if (isSafariBrowser) {
       setVideoSrc("/videos/animation-safari-full.mov")
@@ -75,7 +73,7 @@ const IntroAnimation = () => {
         alt="Intro animation of Emi name moving"
         muted
         playsInline
-        loop={isMobile}
+        loop={isMobileDevice}
       >
         <source src={videoSrc} type={videoType} />
         Your browser does not support the video tag.
