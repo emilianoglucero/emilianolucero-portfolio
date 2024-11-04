@@ -42,7 +42,7 @@ const IntroAnimation = () => {
         duration: 1,
         delay: 2.2,
         onStart: () => {
-          videoRef.current.play()
+          if (videoRef.current) videoRef.current.play()
         },
       })
     }
@@ -54,8 +54,10 @@ const IntroAnimation = () => {
         ease: "power2.inOut",
         delay: 6.4,
         onComplete: () => {
-          videoRef.current.pause()
-          videoRef.current.currentTime = 0 // Reset video to the beginning
+          if (videoRef.current) {
+            videoRef.current.pause()
+            videoRef.current.currentTime = 0 // Reset video to the beginning
+          }
         },
       })
     }
@@ -63,6 +65,11 @@ const IntroAnimation = () => {
     animateIn()
     animateOut()
   }, [])
+
+  // Guard to prevent rendering until isMobile and isSafari are determined
+  if (isMobile === undefined || isSafari === undefined) {
+    return null // Render nothing or a loading spinner
+  }
 
   return (
     <div className="w-full h-full">
