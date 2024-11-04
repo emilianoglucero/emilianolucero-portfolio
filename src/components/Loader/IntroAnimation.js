@@ -33,14 +33,6 @@ const IntroAnimation = () => {
 
     console.log("videoSrc:", src)
     console.log("videoType:", type)
-
-    // Dynamically preload the video
-    const link = document.createElement("link")
-    link.rel = "preload"
-    link.as = "video"
-    link.href = src
-    link.type = type
-    document.head.appendChild(link)
   }, [isMobile, isSafari])
 
   useIsomorphicLayoutEffect(() => {
