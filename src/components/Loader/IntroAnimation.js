@@ -26,6 +26,9 @@ const IntroAnimation = () => {
   useEffect(() => {
     console.log("isSafari:", isSafari)
     console.log("isMobile:", isMobile)
+    console.log("videoSrc:", videoSrc)
+    console.log("videoType:", videoType)
+
     // Dynamically preload the video
     const link = document.createElement("link")
     link.rel = "preload"
