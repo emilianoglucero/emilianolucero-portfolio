@@ -15,7 +15,7 @@ const IntroAnimation = () => {
       videoSrc = "/videos/animation-safari-full.mov"
       videoType = "video/quicktime"
     } else if (isMobile) {
-      videoSrc = "/videos/animation-shorter.webm"
+      videoSrc = "/videos/animation-short.webm"
       videoType = "video/webm"
     } else {
       videoSrc = "/videos/animation-full.webm"
