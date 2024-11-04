@@ -14,28 +14,34 @@ const IntroAnimation = () => {
     console.log("isMobile:", isMobile)
     console.log("isSafari:", isSafari)
 
+    let src = ""
+    let type = ""
+
     if (isSafari) {
-      setVideoSrc("/videos/animation-safari-full.mov")
-      setVideoType("video/quicktime")
+      src = "/videos/animation-safari-full.mov"
+      type = "video/quicktime"
     } else if (isMobile) {
-      setVideoSrc("/videos/animation-short.webm")
-      setVideoType("video/webm")
+      src = "/videos/animation-short.webm"
+      type = "video/webm"
     } else {
-      setVideoSrc("/videos/animation-full.webm")
-      setVideoType("video/webm")
+      src = "/videos/animation-full.webm"
+      type = "video/webm"
     }
 
-    console.log("videoSrc:", videoSrc)
-    console.log("videoType:", videoType)
+    setVideoSrc(src)
+    setVideoType(type)
+
+    console.log("videoSrc:", src)
+    console.log("videoType:", type)
 
     // Dynamically preload the video
     const link = document.createElement("link")
     link.rel = "preload"
     link.as = "video"
-    link.href = videoSrc
-    link.type = videoType
+    link.href = src
+    link.type = type
     document.head.appendChild(link)
-  }, [isMobile, isSafari, videoSrc, videoType])
+  }, [isMobile, isSafari])
 
   useIsomorphicLayoutEffect(() => {
     const animateIn = () => {
