@@ -77,10 +77,7 @@ const IntroAnimation = () => {
         playsInline
         loop={isMobile}
       >
-        <source
-          src="/videos/animation-safari-full.mov"
-          type="video/quicktime"
-        />
+        <source src={videoSrc} type={videoType} />
         Your browser does not support the video tag.
       </video>
     </div>
