@@ -10,6 +10,9 @@ const IntroAnimation = () => {
   const [videoType, setVideoType] = useState("video/webm")
 
   useEffect(() => {
+    console.log("isSafari:", isSafari)
+    console.log("isMobile:", isMobile)
+    alert("isSafari: " + isSafari + "\nisMobile: " + isMobile)
     let videoSrc, videoType
     if (isSafari) {
       videoSrc = "/videos/animation-safari-full.mov"
