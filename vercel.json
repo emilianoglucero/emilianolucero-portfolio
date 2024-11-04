@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/videos/(.*).mov",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "video/quicktime"
+        }
+      ]
+    }
+  ]
+}

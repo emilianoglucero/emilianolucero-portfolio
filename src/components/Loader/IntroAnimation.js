@@ -24,6 +24,7 @@ const IntroAnimation = () => {
   })
 
   useEffect(() => {
+    console.log("User Agent:", navigator.userAgent)
     console.log("isSafari:", isSafari)
     console.log("isMobile:", isMobile)
     console.log("videoSrc:", videoSrc)
