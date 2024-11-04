@@ -1,31 +1,32 @@
 import React, { useRef, useEffect, useState } from "react"
 import { gsap } from "../../lib/gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
+import { useDeviceDetect } from "../../hooks/use-device-detect"
 import "./IntroAnimation.css"
 
 const IntroAnimation = () => {
   const videoRef = useRef(null)
+  const { isMobile, isSafari } = useDeviceDetect()
   const [videoSrc, setVideoSrc] = useState("")
   const [videoType, setVideoType] = useState("")
-  const [isMobileDevice, setIsMobileDevice] = useState(false)
 
   useEffect(() => {
-    const userAgent = navigator.userAgent.toLowerCase()
-    const isSafariBrowser = /^((?!chrome|android).)*safari/i.test(userAgent)
-    const isMobileDevice = /mobile|android|iphone|ipad|phone/i.test(userAgent)
+    console.log("isMobile:", isMobile)
+    console.log("isSafari:", isSafari)
 
-    setIsMobileDevice(isMobileDevice)
-
-    if (isSafariBrowser) {
+    if (isSafari) {
       setVideoSrc("/videos/animation-safari-full.mov")
       setVideoType("video/quicktime")
-    } else if (isMobileDevice) {
+    } else if (isMobile) {
       setVideoSrc("/videos/animation-short.webm")
       setVideoType("video/webm")
     } else {
       setVideoSrc("/videos/animation-full.webm")
       setVideoType("video/webm")
     }
+
+    console.log("videoSrc:", videoSrc)
+    console.log("videoType:", videoType)
 
     // Dynamically preload the video
     const link = document.createElement("link")
@@ -34,7 +35,7 @@ const IntroAnimation = () => {
     link.href = videoSrc
     link.type = videoType
     document.head.appendChild(link)
-  }, [videoSrc, videoType])
+  }, [isMobile, isSafari, videoSrc, videoType])
 
   useIsomorphicLayoutEffect(() => {
     const animateIn = () => {
@@ -73,7 +74,7 @@ const IntroAnimation = () => {
         alt="Intro animation of Emi name moving"
         muted
         playsInline
-        loop={isMobileDevice}
+        loop={isMobile}
       >
         <source src={videoSrc} type={videoType} />
         Your browser does not support the video tag.
