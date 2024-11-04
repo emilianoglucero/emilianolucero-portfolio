@@ -6,7 +6,7 @@ import "./IntroAnimation.css"
 
 const IntroAnimation = () => {
   const videoRef = useRef(null)
-  const { isMobile, isSafari } = useDeviceDetect()
+  const { isMobile = false, isSafari = true } = useDeviceDetect()
   const [videoSrc, setVideoSrc] = useState("")
   const [videoType, setVideoType] = useState("")
 
@@ -37,27 +37,29 @@ const IntroAnimation = () => {
 
   useIsomorphicLayoutEffect(() => {
     const animateIn = () => {
-      gsap.from(videoRef.current, {
+      gsap.from(".animation-container", {
         opacity: 0,
         duration: 1,
         delay: 2.2,
         onStart: () => {
-          if (videoRef.current) videoRef.current.play()
+          const videoElement = document.querySelector(".animation-container")
+
+          videoElement.play()
         },
       })
     }
 
     const animateOut = () => {
-      gsap.to(videoRef.current, {
+      gsap.to(".animation-container", {
         opacity: 0,
         duration: 0.25,
         ease: "power2.inOut",
         delay: 6.4,
         onComplete: () => {
-          if (videoRef.current) {
-            videoRef.current.pause()
-            videoRef.current.currentTime = 0 // Reset video to the beginning
-          }
+          const videoElement = document.querySelector(".animation-container")
+
+          videoElement.pause()
+          videoElement.currentTime = 0 // Reset video to the beginning
         },
       })
     }
@@ -67,9 +69,9 @@ const IntroAnimation = () => {
   }, [])
 
   // Guard to prevent rendering until isMobile and isSafari are determined
-  if (isMobile === undefined || isSafari === undefined) {
-    return null // Render nothing or a loading spinner
-  }
+  // if (isMobile === undefined || isSafari === undefined) {
+  //   return null // Render nothing or a loading spinner
+  // }
 
   return (
     <div className="w-full h-full">
