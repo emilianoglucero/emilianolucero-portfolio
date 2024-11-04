@@ -8,7 +8,7 @@ const IntroAnimation = () => {
   const videoRef = useRef(null)
   const [videoSrc, setVideoSrc] = useState(() => {
     if (isSafari) {
-      return "/videos/animation-safari-full.mov"
+      return "/videos/animation-full.webm"
     } else if (isMobile) {
       return "/videos/animation-short.webm"
     } else {
@@ -17,9 +17,9 @@ const IntroAnimation = () => {
   })
   const [videoType, setVideoType] = useState(() => {
     if (isSafari) {
-      return "video/quicktime"
-    } else {
       return "video/webm"
+    } else {
+      return "video/quicktime"
     }
   })
 
