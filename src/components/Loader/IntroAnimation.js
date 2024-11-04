@@ -23,6 +23,21 @@ const IntroAnimation = () => {
     }
   })
 
+  useEffect(() => {
+    console.log("isSafari:", isSafari)
+    console.log("isMobile:", isMobile)
+    console.log("videoSrc:", videoSrc)
+    console.log("videoType:", videoType)
+
+    // Dynamically preload the video
+    const link = document.createElement("link")
+    link.rel = "preload"
+    link.as = "video"
+    link.href = videoSrc
+    link.type = videoType
+    document.head.appendChild(link)
+  }, [videoSrc, videoType])
+
   useIsomorphicLayoutEffect(() => {
     const animateIn = () => {
       gsap.from(videoRef.current, {
@@ -62,7 +77,10 @@ const IntroAnimation = () => {
         playsInline
         loop={isMobile}
       >
-        <source src={videoSrc} type={videoType} />
+        <source
+          src="/videos/animation-safari-full.mov"
+          type="video/quicktime"
+        />
         Your browser does not support the video tag.
       </video>
     </div>
