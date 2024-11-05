@@ -1,8 +1,11 @@
 import React from "react"
-import IntroAnimation from "./IntroAnimation"
 import gsap from "gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
 import "./IntroLoader.css"
+import { useDeviceDetect } from "../../hooks/use-device-detect"
+import MobileIntro from "./MobileIntro"
+import SafariIntro from "./SafariIntro"
+import DefaultIntro from "./DefaultIntro"
 
 const Marquee = React.memo(() => (
   <div className="relative flex gap-3 text-sm marquee md:gap-20">
@@ -23,7 +26,13 @@ const Bar = React.memo(({ index }) => (
 ))
 
 const IntroLoader = () => {
+  const { isMobile, isSafari } = useDeviceDetect()
+
   useIsomorphicLayoutEffect(() => {
+    if (isMobile === undefined || isSafari === undefined) {
+      return // Exit early if isMobile or isSafari is undefined
+    }
+
     const animateBars = () => {
       gsap.to(".bar", {
         delay: 1,
@@ -79,12 +88,19 @@ const IntroLoader = () => {
 
     animateBars()
     animateMarquee()
-  }, [])
+  }, [isMobile, isSafari])
+
+  // Guard to prevent rendering until isMobile and isSafari are determined
+  if (isMobile === undefined || isSafari === undefined) {
+    return null // Render nothing or a loading spinner
+  }
 
   return (
     <>
       <div className="intro-animation-container">
-        <IntroAnimation />
+        {isSafari && <SafariIntro />}
+        {isMobile && !isSafari && <MobileIntro />}
+        {!isMobile && !isSafari && <DefaultIntro />}
       </div>
       <div className="intro-loader-container">
         {[...Array(5)].map((_, i) => (

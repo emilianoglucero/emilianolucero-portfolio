@@ -2,11 +2,10 @@ import React, { useRef, useEffect, useState } from "react"
 import { gsap } from "../../lib/gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
 import { useDeviceDetect } from "../../hooks/use-device-detect"
-import "./IntroAnimation.css"
 
 const IntroAnimation = () => {
   const videoRef = useRef(null)
-  const { isMobile = false, isSafari = true } = useDeviceDetect()
+  const { isMobile, isSafari } = useDeviceDetect()
   const [videoSrc, setVideoSrc] = useState("")
   const [videoType, setVideoType] = useState("")
 
@@ -37,29 +36,29 @@ const IntroAnimation = () => {
 
   useIsomorphicLayoutEffect(() => {
     const animateIn = () => {
-      gsap.from(".animation-container", {
-        opacity: 0,
-        duration: 1,
-        delay: 2.2,
-        onStart: () => {
-          const videoElement = document.querySelector(".animation-container")
-
-          videoElement.play()
-        },
-      })
+      gsap.fromTo(
+        videoRef.current,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 1,
+          delay: 2.2,
+          onStart: () => {
+            videoRef.current.play()
+          },
+        }
+      )
     }
 
     const animateOut = () => {
-      gsap.to(".animation-container", {
+      gsap.to(videoRef.current, {
         opacity: 0,
         duration: 0.25,
         ease: "power2.inOut",
         delay: 6.4,
         onComplete: () => {
-          const videoElement = document.querySelector(".animation-container")
-
-          videoElement.pause()
-          videoElement.currentTime = 0 // Reset video to the beginning
+          videoRef.current.pause()
+          videoRef.current.currentTime = 0 // Reset video to the beginning
         },
       })
     }
@@ -69,9 +68,14 @@ const IntroAnimation = () => {
   }, [])
 
   // Guard to prevent rendering until isMobile and isSafari are determined
-  // if (isMobile === undefined || isSafari === undefined) {
-  //   return null // Render nothing or a loading spinner
-  // }
+  if (isMobile === undefined || isSafari === undefined) {
+    return null // Render nothing or a loading spinner
+  }
+
+  // Guard to prevent rendering until videoSrc and videoType are set
+  if (!videoSrc || !videoType) {
+    return null // Render nothing or a loading spinner
+  }
 
   return (
     <div className="w-full h-full">
