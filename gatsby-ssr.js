@@ -21,12 +21,5 @@ export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
       type="font/ttf"
       crossOrigin="anonymous"
     />,
-    <link
-      key="animation-full"
-      rel="preload"
-      href="/videos/animation-full.webm"
-      as="video"
-      type="video/webm"
-    />,
   ])
 }

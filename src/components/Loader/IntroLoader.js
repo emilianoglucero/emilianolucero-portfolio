@@ -1,8 +1,9 @@
 import React from "react"
-import IntroAnimation from "./IntroAnimation"
 import gsap from "gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
 import "./IntroLoader.css"
+import { useDeviceDetect } from "../../hooks/use-device-detect"
+import IntroVideo from "./IntroVideo"
 
 const Marquee = React.memo(() => (
   <div className="relative flex gap-3 text-sm marquee md:gap-20">
@@ -23,7 +24,13 @@ const Bar = React.memo(({ index }) => (
 ))
 
 const IntroLoader = () => {
+  const { isMobile, isSafari } = useDeviceDetect()
+
   useIsomorphicLayoutEffect(() => {
+    if (isMobile === undefined || isSafari === undefined) {
+      return // Exit early if isMobile or isSafari is undefined
+    }
+
     const animateBars = () => {
       gsap.to(".bar", {
         delay: 1,
@@ -79,12 +86,33 @@ const IntroLoader = () => {
 
     animateBars()
     animateMarquee()
-  }, [])
+  }, [isMobile, isSafari])
+
+  // Guard to prevent rendering until isMobile and isSafari are determined
+  if (isMobile === undefined || isSafari === undefined) {
+    return null // Render nothing or a loading spinner
+  }
+
+  let videoSrc = ""
+  let videoType = ""
+  let loop = false
+
+  if (isSafari) {
+    videoSrc = "/videos/animation-safari-full.mov"
+    videoType = "video/quicktime"
+  } else if (isMobile) {
+    videoSrc = "/videos/animation-short.webm"
+    videoType = "video/webm"
+    loop = true
+  } else {
+    videoSrc = "/videos/animation-full.webm"
+    videoType = "video/webm"
+  }
 
   return (
     <>
       <div className="intro-animation-container">
-        <IntroAnimation />
+        <IntroVideo videoSrc={videoSrc} videoType={videoType} loop={loop} />
       </div>
       <div className="intro-loader-container">
         {[...Array(5)].map((_, i) => (
