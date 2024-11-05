@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react"
 import { gsap } from "../../lib/gsap"
 
-const MobileIntro = () => {
+const IntroVideo = ({ videoSrc, videoType, loop }) => {
   const videoRef = useRef(null)
 
   useEffect(() => {
@@ -34,13 +34,13 @@ const MobileIntro = () => {
         alt="Intro animation"
         muted
         playsInline
-        loop
+        loop={loop}
       >
-        <source src="/videos/animation-short.webm" type="video/webm" />
+        <source src={videoSrc} type={videoType} />
         Your browser does not support the video tag.
       </video>
     </div>
   )
 }
 
-export default MobileIntro
+export default IntroVideo

@@ -3,9 +3,7 @@ import gsap from "gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
 import "./IntroLoader.css"
 import { useDeviceDetect } from "../../hooks/use-device-detect"
-import MobileIntro from "./MobileIntro"
-import SafariIntro from "./SafariIntro"
-import DefaultIntro from "./DefaultIntro"
+import IntroVideo from "./IntroVideo"
 
 const Marquee = React.memo(() => (
   <div className="relative flex gap-3 text-sm marquee md:gap-20">
@@ -95,12 +93,26 @@ const IntroLoader = () => {
     return null // Render nothing or a loading spinner
   }
 
+  let videoSrc = ""
+  let videoType = ""
+  let loop = false
+
+  if (isSafari) {
+    videoSrc = "/videos/animation-safari-full.mov"
+    videoType = "video/quicktime"
+  } else if (isMobile) {
+    videoSrc = "/videos/animation-short.webm"
+    videoType = "video/webm"
+    loop = true
+  } else {
+    videoSrc = "/videos/animation-full.webm"
+    videoType = "video/webm"
+  }
+
   return (
     <>
       <div className="intro-animation-container">
-        {isSafari && <SafariIntro />}
-        {isMobile && !isSafari && <MobileIntro />}
-        {!isMobile && !isSafari && <DefaultIntro />}
+        <IntroVideo videoSrc={videoSrc} videoType={videoType} loop={loop} />
       </div>
       <div className="intro-loader-container">
         {[...Array(5)].map((_, i) => (
