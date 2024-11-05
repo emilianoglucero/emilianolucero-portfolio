@@ -18,7 +18,7 @@ const IntroVideo = ({ videoSrc, videoType, loop }) => {
       opacity: 0,
       duration: 0.25,
       ease: "power2.inOut",
-      delay: 6.4,
+      delay: 6,
       onComplete: () => {
         videoRef.current.pause()
         videoRef.current.currentTime = 0

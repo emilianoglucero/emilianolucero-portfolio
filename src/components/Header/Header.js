@@ -28,11 +28,11 @@ export const Header = () => {
     }
 
     animateText(".header1", 8)
-    animateText(".header2", 8.8)
+    animateText(".header2", 8.6)
     animateText(".name", 8)
 
     gsap.to(".photography", {
-      delay: 8.5,
+      delay: 8,
       duration: 2.5,
       ease: "power4.inOut",
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",

@@ -44,7 +44,7 @@ const IntroLoader = () => {
       })
 
       gsap.to(".bar", {
-        delay: 7.5,
+        delay: 6.8,
         clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)",
         duration: 1,
         ease: "power4.inOut",
@@ -68,7 +68,7 @@ const IntroLoader = () => {
         repeat: 4,
         yoyo: true,
         duration: 0.1,
-        delay: 6.8,
+        delay: 6.2,
         onComplete: () => {
           gsap.to(".marquee", {
             opacity: 1,
@@ -77,7 +77,7 @@ const IntroLoader = () => {
       })
 
       gsap.to(".marquee", {
-        delay: 6.5,
+        delay: 5.6,
         left: "-100vw",
         duration: 4,
         ease: "power4.inOut",
