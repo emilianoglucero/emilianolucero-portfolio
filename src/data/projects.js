@@ -47,7 +47,7 @@ const projectsInfo = [
   {
     id: 11,
     href: "https://github.com/emilianoglucero/emilianolucero-portfolio",
-    imgSrc: "portfolio.png",
+    imgSrc: "portfolio.jpg",
     videoSrc: "",
     title: "Personal Portfolio Website",
     description:
