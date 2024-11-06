@@ -53,9 +53,9 @@ export const Header = () => {
         <HeaderAnimation className="main-animation" />
       </div>
       <p className="leading-normal my-11 text-balance">
-        7+ years of experience in the software industry. I can create anything
-        you want to transform your vision and elevate it into a beautiful and
-        high-performance website. <br />
+        7+ years of experience building software. From contributing to startups
+        to create scalable and reliable products to leading immersive,
+        performant, and innovative web experiences. <br />
         Let's tackle new challenges together!
       </p>
 
