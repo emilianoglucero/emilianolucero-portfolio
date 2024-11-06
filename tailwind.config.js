@@ -6,6 +6,12 @@ module.exports = {
       colors: {
         "custom-blue": "rgb(66, 168, 232)",
         "custom-pink": "rgb(253, 200, 246)",
+        "custom-yellow": "rgb(255, 214, 10)",
+        "custom-orange": "#ff4d00",
+        "custom-grey": "rgb(240, 240, 240)",
+        "custom-black": "rgb(6, 8, 7)",
+        "custom-purple": "rgb(175, 159, 212)",
+        "custom-light-green": "rgb(225, 244, 123)",
       },
     },
     container: {
@@ -27,6 +33,8 @@ module.exports = {
       "custom-grey": "rgb(240, 240, 240)",
       "custom-pink": "rgb(253, 200, 246)",
       "custom-yellow": "rgb(239, 240, 51)",
+      "pallete-violet": "#614c8d",
+      "custom-black": "rgb(6, 8, 7)",
     },
     backgroundColor: theme => ({
       ...theme("colors"),

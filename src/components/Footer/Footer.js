@@ -30,7 +30,7 @@ export const Footer = () => {
             Want to know more about my work experience?
           </p>
           <button
-            className="px-8 py-2 uppercase transition duration-300 border shadow-sm max-w-max hover:shadow-md hover:bg-blue-500 border-custom-blue"
+            className="px-8 py-2 uppercase transition duration-300 border shadow-sm max-w-max hover:shadow-md hover:bg-custom-yellow border-custom-purple"
             style={{
               transition: "transform 0.3s, border-color 0.3s",
             }}
@@ -45,7 +45,7 @@ export const Footer = () => {
               e.target.style.transform = "translateY(-3px)"
             }}
             onMouseLeave={e => {
-              e.target.style.borderColor = "rgb(66, 168, 232)"
+              e.target.style.borderColor = "rgb(175, 159, 212)"
               e.target.style.transform = "translateY(0)"
             }}
           >

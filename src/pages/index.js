@@ -37,8 +37,8 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="fixed w-full h-full bg-white opacity-0 main-container">
+    <div className="min-h-screen bg-custom-black text-custom-grey">
+      <div className="fixed w-full h-full opacity-0 main-container">
         <SEO />
         <P5 />
         <div className="container px-6 mx-auto text-4xl text-center font-nb_international_pro my-14 md:px-12 lg:px-12 text-primary">
@@ -51,7 +51,7 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-      <div className="flex flex-col w-full h-screen bg-gray-100 loader-container">
+      <div className="flex flex-col w-full h-screen bg-custom-black loader-container">
         <IntroLoader />
       </div>
     </div>

@@ -8,7 +8,7 @@ export const Projects = ({ info }) => {
 
   return (
     <div
-      className={`flex flex-col flex-1 m-auto overflow-hidden skew-y-12 rounded shadow-lg my-11 hover:shadow-md hover:bg-primary ${colStartClass} ${colSpanClass} ${rowStartClass}`}
+      className={`flex flex-col flex-1 m-auto overflow-hidden skew-y-12 rounded shadow-lg my-11 hover:shadow-md hover:bg-custom-grey hover:text-custom-black ${colStartClass} ${colSpanClass} ${rowStartClass}`}
     >
       <VideoCard info={info} />
       <div className="flex-grow px-6 py-4">

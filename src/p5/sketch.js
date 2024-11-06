@@ -7,8 +7,11 @@ export default function Sketch(p5) {
   var x = []
   var y = []
   var colors = [
-    [253, 200, 246], // pink
-    [239, 240, 51], // yellow
+    // [204, 142, 157], // pink
+    // [253, 200, 246], // pink
+    [6, 8, 7], // black
+    // [175, 159, 212], // purple
+    // [255, 214, 10], // yellow
   ]
 
   p5.setup = () => {
@@ -24,9 +27,9 @@ export default function Sketch(p5) {
 
     p5.fill(colors[0][0], colors[0][1], colors[0][2]) // Set the fill color to pink
 
-    p5.stroke(66, 168, 232) // Set the stroke color to a light blue
-    p5.strokeWeight(0.55)
-    p5.background(240, 240, 240) // Set the background color to white
+    p5.stroke(175, 159, 212) // Set the stroke color to a light blue
+    p5.strokeWeight(0.85)
+    p5.background(6, 8, 7) // Set the background color to white
   }
 
   p5.draw = () => {

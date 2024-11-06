@@ -6,12 +6,15 @@
 :root {
   --custom-blue: rgb(66, 168, 232);
   --custom-pink: rgb(253, 200, 246);
-  --custom-purple: rgb(185, 174, 215);
+  --custom-purple: rgb(175, 159, 212);
+  --custom-yellow: rgb(255, 214, 10);
+  --custom-black: rgb(6, 8, 7);
+  --custom-light-green: #e1f47b;
 }
 
 ::selection {
-  background: var(--custom-blue);
-  color: white;
+  background: var(--custom-yellow);
+  color: var(--custom-black);
 }
 
 button:hover {
