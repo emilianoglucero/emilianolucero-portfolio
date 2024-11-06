@@ -1,6 +1,6 @@
 import React from "react"
 import HoverVideoPlayer from "react-hover-video-player"
-import { Image } from "./Image/Image"
+import { Image } from "../Image/Image"
 
 const VideoCard = ({ info }) => {
   return (

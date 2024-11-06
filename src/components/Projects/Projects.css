@@ -1,0 +1,8 @@
+.video-card {
+  transition: transform 500ms ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.video-card:hover {
+  transform: rotateY(360deg);
+}
