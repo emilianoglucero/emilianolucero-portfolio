@@ -18,10 +18,11 @@ export const Footer = () => {
       <div>
         <div>
           <p className="mt-32 leading-normal mb-11 text-balance">
-            I bring a keen eye for design and a love for creating fun and fresh
-            interfaces, always prioritizing user experience. <br />
-            I love collaborating on new projects or just chatting. <br /> Feel
-            free to reach out to me!
+            I love partnering with talented designers like you to bring ideas to
+            life, transforming concepts into standout full-stack applications
+            that truly delight users. <br />
+            Whether you're looking to collaborate on a new project or just want
+            to chat, feel free to reach out!
           </p>
           <CopyToClipboardButton content="emilianoglucero@gmail.com" />
         </div>

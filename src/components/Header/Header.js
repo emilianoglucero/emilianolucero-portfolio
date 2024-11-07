@@ -53,9 +53,9 @@ export const Header = () => {
         <HeaderAnimation className="main-animation" />
       </div>
       <p className="leading-normal my-11 text-balance">
-        7+ years of experience building software. From contributing to startups
-        to create scalable and reliable products to leading immersive,
-        performant, and innovative web experiences. <br />
+        7+ years of experience building software. From helping startups scale
+        reliable products to leading the creation of immersive,
+        high-performance, and innovative web experiences. <br />
         Let's tackle new challenges together!
       </p>
 
