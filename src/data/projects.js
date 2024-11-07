@@ -48,7 +48,7 @@ const projectsInfo = [
     id: 11,
     href: "https://github.com/emilianoglucero/emilianolucero-portfolio",
     imgSrc: "portfolio.jpg",
-    videoSrc: "",
+    videoSrc: "/videos/portfolio.mp4",
     title: "Personal Portfolio Website",
     description:
       "Designed and developed a landing page for my portfolio (this site), built using React, Gatsby, p5.js for the background animation, GSAP for animations, and TailwindCSS for styling. The intro animation was created by the animator Inés Labarrère Ventroni.",
