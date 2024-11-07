@@ -6,7 +6,7 @@ const projectsInfo = [
     videoSrc: "/videos/blog.mp4",
     title: "I 🖤 my computer job",
     description:
-      "Designed and developed a dynamic blog platform showcasing original writings, technical explorations, curated photography collections, handcrafted playlists, and more.",
+      "Designed and developed a dynamic blog platform showcasing original writings, technical explorations, curated photography collections, handcrafted playlists, and more. Backend built with Payload CMS, frontend with Next.js, GSAP for animations, React Three Fiber for 3D elements, and Typescript for type safety.",
     tag1: "Next.js",
     tag2: "GSAP",
     tag3: "Typescript",
@@ -21,7 +21,7 @@ const projectsInfo = [
     videoSrc: "/videos/cutie.mp4",
     title: "Cutie Romero",
     description:
-      "Designed and developed a Three.js experience that explores the interaction between Twitter fandom and professional football players featuring interactive elements, animations, physics, and shaders.",
+      "Designed and developed a Three.js experience that explores the interaction between Twitter fandom and professional football players featuring interactive elements, animations, physics, and shaders. Built with Vanilla JavaScript, GSAP for animations, and Three.js. Model created with Blender.",
     tag1: "Three.js",
     tag2: "Javascript",
     tag3: "GSAP",
@@ -51,7 +51,7 @@ const projectsInfo = [
     videoSrc: "",
     title: "Personal Portfolio Website",
     description:
-      "Designed and developed a landing page for my portfolio (this site), built using React, Gatsby, and GSAP animations, and styled with TailwindCSS. This project serves as a personal showcase and a playground to experiment with modern web development tools and best practices.",
+      "Designed and developed a landing page for my portfolio (this site), built using React, Gatsby, p5.js for the background animation, GSAP for animations, and TailwindCSS for styling. The intro animation was created by the animator Inés Labarrère Ventroni.",
     tag1: "GSAP",
     tag2: "TailwindCSS",
     tag3: "Gatsby",

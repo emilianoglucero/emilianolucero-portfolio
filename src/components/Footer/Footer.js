@@ -18,8 +18,8 @@ export const Footer = () => {
       <div>
         <div>
           <p className="mt-32 leading-normal mb-11 text-balance">
-            I bring a keen eye for design and a love for creating fun and
-            innovative interfaces, always prioritizing user experience. <br />
+            I bring a keen eye for design and a love for creating fun and fresh
+            interfaces, always prioritizing user experience. <br />
             I love collaborating on new projects or just chatting. <br /> Feel
             free to reach out to me!
           </p>
