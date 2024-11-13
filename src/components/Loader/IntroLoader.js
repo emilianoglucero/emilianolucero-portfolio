@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import gsap from "gsap"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
 import "./IntroLoader.css"
 import { useDeviceDetect } from "../../hooks/use-device-detect"
 import IntroVideo from "./IntroVideo"
+import { useAppStore } from "../../context/use-app-store"
 
 const Marquee = React.memo(() => (
   <div className="relative flex gap-3 text-sm marquee md:gap-20">
@@ -25,10 +26,12 @@ const Bar = React.memo(({ index }) => (
 
 const IntroLoader = () => {
   const { isMobile, isSafari } = useDeviceDetect()
+  const setVideoLoaded = useAppStore(state => state.setVideoLoaded)
+  const [videoLoaded, setVideoLoadedState] = useState(false) // Track video load state
 
   useIsomorphicLayoutEffect(() => {
-    if (isMobile === undefined || isSafari === undefined) {
-      return // Exit early if isMobile or isSafari is undefined
+    if (isMobile === undefined || isSafari === undefined || !videoLoaded) {
+      return // Exit early if isMobile, isSafari, or video is not loaded
     }
 
     const animateBars = () => {
@@ -86,9 +89,9 @@ const IntroLoader = () => {
 
     animateBars()
     animateMarquee()
-  }, [isMobile, isSafari])
+  }, [isMobile, isSafari, videoLoaded]) // Dependency on videoLoaded
 
-  // Guard to prevent rendering until isMobile and isSafari are determined
+  // Guard to prevent rendering until isMobile, isSafari, and videoLoaded are true
   if (isMobile === undefined || isSafari === undefined) {
     return null // Render nothing or a loading spinner
   }
@@ -112,7 +115,15 @@ const IntroLoader = () => {
   return (
     <>
       <div className="intro-animation-container">
-        <IntroVideo videoSrc={videoSrc} videoType={videoType} loop={loop} />
+        <IntroVideo
+          videoSrc={videoSrc}
+          videoType={videoType}
+          loop={loop}
+          onVideoReady={() => {
+            setVideoLoadedState(true)
+            setVideoLoaded(true) // Update Zustand store
+          }}
+        />
       </div>
       <div className="intro-loader-container">
         {[...Array(5)].map((_, i) => (
