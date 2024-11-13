@@ -13,6 +13,9 @@ const VideoCard = ({ info }) => {
     >
       <HoverVideoPlayer
         videoSrc={info.videoSrc}
+        unloadVideoOnPaused
+        sizingMode="overlay" // Use container sizing mode to avoid content jump issues
+        // sizingMode="container" // Use container sizing mode to avoid content jump issues
         pausedOverlay={
           <Image
             filename={info.imgSrc}
@@ -23,6 +26,11 @@ const VideoCard = ({ info }) => {
             }}
             alt={`Thumbnail for ${info.title}`} // Add alt text for the image
           />
+        }
+        loadingOverlay={
+          <div className="flex items-center justify-center w-full h-full text-xl bg-gray-200 font-ft88">
+            <span>loading...</span>
+          </div>
         }
       />
     </a>

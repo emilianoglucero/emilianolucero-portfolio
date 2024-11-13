@@ -30,7 +30,14 @@ export const Image = props => (
       }
 
       const imageSizes = image.node.childImageSharp.fluid
-      return <Img alt={props.alt} fluid={imageSizes} style={props.style} />
+      return (
+        <Img
+          alt={props.alt}
+          fluid={imageSizes}
+          style={props.style}
+          loading="lazy"
+        />
+      )
     }}
   />
 )
