@@ -3,9 +3,16 @@ import HeaderAnimation from "./HeaderAnimation"
 import useIsomorphicLayoutEffect from "../../hooks/use-isomorphic-layout-effect"
 import gsap from "gsap"
 import "./Header.css"
+import { useAppStore } from "../../context/use-app-store"
 
 export const Header = () => {
+  const videoLoaded = useAppStore(state => state.videoLoaded)
+
   useIsomorphicLayoutEffect(() => {
+    if (!videoLoaded) {
+      return // Exit early if video is not loaded
+    }
+
     const animateText = (selector, delay) => {
       const textWrapper = document.querySelector(selector)
       if (textWrapper) {
@@ -37,7 +44,7 @@ export const Header = () => {
       ease: "power4.inOut",
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     })
-  }, [])
+  }, [videoLoaded])
 
   return (
     <div className="text-4xl header-container">
