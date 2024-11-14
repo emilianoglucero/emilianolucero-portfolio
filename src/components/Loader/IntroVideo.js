@@ -1,22 +1,29 @@
-import React, { useRef, useEffect } from "react"
+import React, { useRef, useEffect, useState } from "react"
 import { gsap } from "../../lib/gsap"
 
 const IntroVideo = ({ videoSrc, videoType, loop, onVideoReady }) => {
   const videoRef = useRef(null)
+  const [isVideoStarted, setIsVideoStarted] = useState(false)
 
   useEffect(() => {
-    const handleCanPlayThrough = () => {
+    const handleLoadedData = () => {
+      if (isVideoStarted) return // Prevent multiple triggers
+      setIsVideoStarted(true)
       if (onVideoReady) onVideoReady() // Notify parent component
 
       // Start animations after the video is fully loaded
-      gsap.from(videoRef.current, {
-        opacity: 0,
-        duration: 1,
-        delay: 2.2,
-        onStart: () => {
-          videoRef.current.play()
-        },
-      })
+      gsap.fromTo(
+        videoRef.current,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 1,
+          delay: 2.2,
+          onStart: () => {
+            videoRef.current.play()
+          },
+        }
+      )
 
       gsap.to(videoRef.current, {
         opacity: 0,
@@ -31,18 +38,20 @@ const IntroVideo = ({ videoSrc, videoType, loop, onVideoReady }) => {
     }
 
     const videoElement = videoRef.current
-    videoElement.addEventListener("canplaythrough", handleCanPlayThrough)
+    videoElement.addEventListener("loadeddata", handleLoadedData, {
+      once: true,
+    })
 
     return () => {
-      videoElement.removeEventListener("canplaythrough", handleCanPlayThrough)
+      videoElement.removeEventListener("loadeddata", handleLoadedData)
     }
-  }, [onVideoReady])
+  }, [onVideoReady, isVideoStarted])
 
   return (
     <div className="w-full h-full">
       <video
         ref={videoRef}
-        className="animation-container w-[480px] h-[270px] sm:w-[960px] md:w-[720px] md:h-auto object-cover"
+        className="animation-container w-[480px] h-[270px] sm:w-[960px] md:w-[720px] md:h-auto object-cover opacity-0"
         alt="Intro animation"
         muted
         playsInline
