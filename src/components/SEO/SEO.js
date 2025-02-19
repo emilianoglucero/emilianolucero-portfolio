@@ -1,9 +1,8 @@
 // src/components/SEO.js
 import React from "react"
-import { Helmet } from "react-helmet"
 
-const SEO = () => (
-  <Helmet>
+export const Seo = ({ title, description, image, url }) => (
+  <>
     <title>Emiliano Lucero the Web Dev</title>
     <meta
       name="description"
@@ -47,7 +46,10 @@ const SEO = () => (
       property="twitter:image"
       content="https://storage.googleapis.com/bebeto-pizza-dibuja/og-images/og-image-portfolio.jpg"
     />
-  </Helmet>
+  </>
 )
 
-export default SEO
+// Export the Head component for Gatsby
+export const Head = () => <Seo />
+
+export default Seo

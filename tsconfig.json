@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "esnext"],
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": "./dist",
+    "isolatedModules": true
+  },
+  "include": ["./src/**/*", "./gatsby-*.js", "./plugins/**/*"],
+  "exclude": ["node_modules"]
+}
