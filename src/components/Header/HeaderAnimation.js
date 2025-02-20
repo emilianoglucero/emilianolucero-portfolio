@@ -1,18 +1,15 @@
 import React from "react"
-import Animated from "../../images/emi.svg"
+import EmiSvg from "../../images/emi.svg"
 
 function HeaderAnimation() {
   return (
-    <div className="w-10/12 m-auto h-5/6">
-      <object
-        type="image/svg+xml"
-        data={Animated}
-        style={{ width: "80%", margin: "auto" }}
-        className="svg"
+    <div className="w-full max-w-4xl mx-auto">
+      <EmiSvg
+        className="w-full h-auto svg"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 211.200000 156"
         aria-label="Animated SVG of Emi"
-      >
-        :)
-      </object>
+      />
     </div>
   )
 }

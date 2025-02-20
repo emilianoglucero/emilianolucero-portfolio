@@ -14,6 +14,11 @@
     "outDir": "./dist",
     "isolatedModules": true
   },
-  "include": ["./src/**/*", "./gatsby-*.js", "./plugins/**/*"],
+  "include": [
+    "./src/**/*",
+    "./gatsby-*.js",
+    "./plugins/**/*",
+    "./src/custom.d.ts"
+  ],
   "exclude": ["node_modules"]
 }

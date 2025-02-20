@@ -18,7 +18,7 @@ export const Seo = ({ title, description, image, url }) => (
       property="og:image"
       content="https://storage.googleapis.com/bebeto-pizza-dibuja/og-images/og-image-portfolio.jpg"
     />
-    <meta property="og:url" content="https://www.emilianolucero.ar/" />
+    <meta property="og:url" content="https://www.emilianolucero.info/" />
     <meta property="og:type" content="website" />
 
     {/* Facebook */}
@@ -36,7 +36,7 @@ export const Seo = ({ title, description, image, url }) => (
 
     {/* Twitter */}
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.emilianolucero.ar/" />
+    <meta property="twitter:url" content="https://www.emilianolucero.info/" />
     <meta property="twitter:title" content="Emiliano Lucero the Web Dev" />
     <meta
       property="twitter:description"
