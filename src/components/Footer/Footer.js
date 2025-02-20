@@ -37,7 +37,7 @@ export const Footer = () => {
             }}
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/16HPgJ9UyvaTpZ8phgbXdfc-bYeJb6XCP/view?usp=sharing",
+                "https://drive.google.com/file/d/1YoA_0Th4VubpYRqdGeXwYsWT0rreu3O4/view?usp=sharing",
                 "_blank"
               )
             }
