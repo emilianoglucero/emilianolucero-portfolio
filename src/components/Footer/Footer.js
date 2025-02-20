@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import CopyToClipboardButton from "../../hooks/useCopyToClipboard"
-import arenaIcon from "../../images/icons/arena.svg"
+import ArenaIcon from "../../images/icons/arena.svg"
 
 export const Footer = () => {
   return (
@@ -148,10 +148,9 @@ export const Footer = () => {
             target="_blank"
             aria-label="Arena"
           >
-            <img
-              src={arenaIcon}
-              alt="Emiliano Lucero Arena profile"
+            <ArenaIcon
               className="[width:5rem] [height:5rem]"
+              aria-label="Emiliano Lucero Arena profile"
             />
           </a>
         </div>
