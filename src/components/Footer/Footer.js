@@ -87,7 +87,7 @@ export const Footer = () => {
           </a>
           <a
             className="absolute transition-transform transform duration-300 hover:rotate-6 md:top-[0%] md:left-[38%] top-[10%] left-[61%]"
-            href="mailto:emilianoglucero@gmail.com"
+            href="mailto:hello@emilianolucero.info"
             rel="noreferrer"
             target="_blank"
             aria-label="Email"
