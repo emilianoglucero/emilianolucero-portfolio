@@ -103,10 +103,6 @@ const IntroLoader = () => {
   if (isSafari) {
     videoSrc = "/videos/animation-safari-full.mov"
     videoType = "video/quicktime"
-  } else if (isMobile) {
-    videoSrc = "/videos/animation-short.webm"
-    videoType = "video/webm"
-    loop = true
   } else {
     videoSrc = "/videos/animation-full.webm"
     videoType = "video/webm"
