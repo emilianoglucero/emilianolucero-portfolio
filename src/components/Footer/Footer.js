@@ -24,7 +24,7 @@ export const Footer = () => {
             Whether you're looking to collaborate on a new project or just want
             to chat, feel free to reach out!
           </p>
-          <CopyToClipboardButton content="emilianoglucero@gmail.com" />
+          <CopyToClipboardButton content="hello@emilianolucero.info" />
         </div>
         <div>
           <p className="mt-24 leading-normal mb-11">
