@@ -47,7 +47,7 @@ export const Header = () => {
   }, [videoLoaded])
 
   return (
-    <div className="text-4xl header-container">
+    <div className="text-3xl header-container">
       <div className="flex flex-col justify-center gap-3 header-intro sm:flex-row">
         <p className="leading-normal header1">Hey there, I'm</p>
         <span className="self-center pt-1 name font-ft88"> Emi.</span>

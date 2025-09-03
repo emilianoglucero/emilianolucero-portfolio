@@ -45,7 +45,7 @@ export default function Home() {
         <div className="fixed w-full h-full opacity-0 main-container">
           <Seo />
           {!isMobile && <P5 />}
-          <div className="container px-6 mx-auto text-4xl text-center font-nb_international_pro my-14 md:px-12 lg:px-12 text-primary">
+          <div className="container px-6 mx-auto text-3xl text-center font-nb_international_pro my-14 md:px-12 lg:px-12 text-primary">
             <Header />
             <div className="grid content-center justify-center grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-16 lg:grid-rows-1">
               {projectsInfo.map(info => (
