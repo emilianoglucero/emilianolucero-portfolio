@@ -11,6 +11,7 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import CopyToClipboardButton from "../../hooks/useCopyToClipboard"
 import ArenaIcon from "../../images/icons/arena.svg"
+import MagneticElement from "../Magnetic/MagneticElement"
 
 export const Footer = () => {
   return (
@@ -24,12 +25,14 @@ export const Footer = () => {
             Whether you're looking to collaborate on a new project or just want
             to chat, feel free to reach out!
           </p>
-          <CopyToClipboardButton content="hello@emilianolucero.info" />
+         
+            <CopyToClipboardButton content="hello@emilianolucero.info" />
         </div>
         <div>
           <p className="mt-24 leading-normal mb-11">
             Want to know more about my work experience?
           </p>
+          <MagneticElement> 
           <button
             className="px-8 py-2 uppercase transition duration-300 border shadow-sm max-w-max hover:shadow-md hover:bg-blue-500 border-custom-blue"
             style={{
@@ -52,6 +55,7 @@ export const Footer = () => {
           >
             See My Resume
           </button>
+          </MagneticElement>
         </div>
       </div>
       <div>

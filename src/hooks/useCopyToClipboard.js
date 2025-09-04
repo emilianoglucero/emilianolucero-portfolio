@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-
+import MagneticElement from "../components/Magnetic/MagneticElement"
 const useCopyToClipboard = () => {
   const [isCopied, setIsCopied] = useState(false)
 
@@ -20,6 +20,7 @@ const CopyToClipboardButton = ({ content }) => {
 
   return (
     <div>
+      <MagneticElement> 
       <button
         onClick={() => copyToClipboard(content)}
         className="px-8 py-2 uppercase transition duration-300 border shadow-sm max-w-max hover:shadow-md hover:bg-blue-500 border-custom-blue"
@@ -37,6 +38,7 @@ const CopyToClipboardButton = ({ content }) => {
       >
         {isCopied ? "copied!" : "copy email"}
       </button>
+      </MagneticElement>
     </div>
   )
 }
